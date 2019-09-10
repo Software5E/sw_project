@@ -24,7 +24,8 @@ A step by step series of examples that tell you how to get a development env run
 Clone the repository:
 
 ```
-git clone https://github.com/Software5E/sw_project.git```
+git clone https://github.com/Software5E/sw_project.git
+```
 
 Install Pre-hooks
 
