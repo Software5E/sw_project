@@ -6,7 +6,7 @@
 # If this script exits with a non-zero status nothing will be pushed.
 #
 # Steps to install, from the root directory of your repo...
-# 1. Copy the file into your repo at `.githooks/pre-push`
+# 1. Copy the files `.githooks/pre-push` & `.githooks/stop.txt` into your repo at `.git/hooks/`
 # 2. Set executable permissions, run `chmod +x .git/hooks/pre-push`
 # 3. Or, use `rake hooks:pre_push` to install
 #
@@ -32,7 +32,7 @@ will_remove_protected_branch=':'$protected_branch
 
 do_exit(){
   echo -e $policy
-  cat .githooks/stop.txt
+  cat stop.txt
   exit 1
 }
 

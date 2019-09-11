@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Latest Version of Node.JS
+Latest Version of Node.js
 Latest Version of Mocha
 Latest Version of Postman
 
@@ -30,9 +30,10 @@ git clone https://github.com/Software5E/sw_project.git
 Install Pre-hooks
 
 ```
-cd .githooks
-chmod +x pre-push
-cd ..
+# Steps to install, from the root directory of your repo...
+# 1. Copy the files `.githooks/pre-push` & `.githooks/stop.txt` into your repo at `.git/hooks/`
+# 2. Set executable permissions, run `chmod +x .git/hooks/pre-push`
+# 3. Or, use `rake hooks:pre_push` to install
 ```
 Install NodeJS
 ```
@@ -41,7 +42,7 @@ https://nodejs.org/en/
 More steps coming soon
 
 ```
-in development
+In development, more steps coming  up
 ```
 
 ## Deployment
@@ -62,6 +63,9 @@ To deploy this system, we will use Heroku as our web server host, and AWS for ou
 
 * **Ariel Barboza**
 * **Sara Gaya**
+* **Santiago Romero**
+* **Zoe Seibert**
+* **Hayden Menge**
 See also the list of [contributors](https://github.com/orgs/Software5E/people) who participated in this project.
 
 ## License
