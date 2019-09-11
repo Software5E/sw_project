@@ -41,7 +41,7 @@ https://nodejs.org/en/
 More steps coming soon
 
 ```
-in development
+in development, more steps coming  up
 ```
 
 ## Deployment
