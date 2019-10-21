@@ -15,6 +15,7 @@ const SideDrawer = props => {
                     <a href="/newsletter">Newsletter</a></li>
             </ul>
         </nav>
+
     );
 };
 export default SideDrawer;

@@ -5,10 +5,11 @@ import NotFound from "./views/NotFound"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Toolbar from "./components/Toolbar/Toolbar"
-
+import { Form, Modal, Button, ButtonToolbar } from 'react-bootstrap';
 import SignUp from "./components/SignUp/SignUp"
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
+import Imgs from './components/Imgs/Imgs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -50,7 +51,9 @@ class App extends Component {
             <Redirect to="/Home" />
           </Route>
           <Route component={NotFound} />
-        </Switch></main>
+        </Switch>
+
+        </main>
         <Footer />
 
       </div >
