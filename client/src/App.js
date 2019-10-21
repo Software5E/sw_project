@@ -26,8 +26,6 @@ class App extends Component {
     this.setState({ SideDrawerOpen: false });
   };
 
-
-
   render() {
 
     let backdrop;
@@ -41,7 +39,6 @@ class App extends Component {
         <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}
         {/* <SignUp /> Create Responsive Sign up form*/}
-
 
         <main style={{ marginTop: '56px' }}><Switch>
 
