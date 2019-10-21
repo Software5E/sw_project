@@ -61,3 +61,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+![GitHub Logo](/Capture.JPG)
+Format: ![Mobile View]
+![GitHub Logo](/Capture2.JPG)
+Format: ![Desktop View]
