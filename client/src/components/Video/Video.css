@@ -1,0 +1,15 @@
+
+@media (max-width: 768px){
+    .videoTag {
+        width: 100%;
+        height: 768;
+        position: relative;
+    }
+ }
+ @media (min-width: 769px){
+    .videoTag {
+        width: 100%;
+        height: 1200px;
+        position: relative;
+    }
+ }
