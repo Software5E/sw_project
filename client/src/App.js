@@ -15,9 +15,7 @@ class App extends Component {
 
   render() {
 
-
     return (
-
       <main style={{ background: 'black' }}>
         < Toolbar /><Switch>
           <Route exact path="/Home" component={Home} />
