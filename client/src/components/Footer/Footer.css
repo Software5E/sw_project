@@ -1,3 +1,31 @@
+.foot{
+  background: darkslategrey;
+  cursor: url('../../assets/lock.ico'), auto;	
+  
+}
+.foot:hover {
+  cursor: url('../../assets/lock.ico'), auto;	
+}
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -12,7 +40,9 @@
   /* Custom page CSS
   -------------------------------------------------- */
   /* Not required for template or sticky footer method. */
-  
+  .module {
+    cursor: url('/lock.png'), auto;	
+  }
   .container {
     width: auto;
     max-width: 680px;
@@ -58,6 +88,3 @@
     background: #ff5700;
     color: white;
   }
-  
-  /* Twitter */
- 
