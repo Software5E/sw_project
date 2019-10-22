@@ -5,7 +5,8 @@ import About from "./views/About/About"
 import NotFound from "./views/NotFound"
 import Footer from "./components/Footer/Footer"
 import Toolbar from "./components/Toolbar/Toolbar"
-//import SignUp from "./components/SignUp/SignUp"
+import SignUp from "./components/SignUp/SignUp"
+import Container from 'react-bootstrap/Container';
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +26,8 @@ class App extends Component {
             <Redirect to="/Home" />
           </Route>
           <Route component={NotFound} />
-        </Switch><Footer />
+        </Switch>
+        <Footer />
       </main >
     );
   }

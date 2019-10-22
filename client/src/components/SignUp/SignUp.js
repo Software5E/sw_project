@@ -1,41 +1,53 @@
-import React from 'react';
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import './SignUp.css';
-
-const SignUp = () => {
+const FormPage = () => {
     return (
-        <div class="all">
-            <div class="container register-form">
-                <div class="form">
-                    <div class="note">
-                        <p>This is a simpleRegister Form made using Boostrap.</p>
-                    </div>
-
-                    <div class="form-content">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone Number *" value="" />
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Password *" value="" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Confirm Password *" value="" />
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btnSubmit">Submit</button>
-                    </div>
-                </div>
-            </div>
+        <div className="formPage">
+            <MDBContainer>
+                <MDBRow>
+                    <MDBCol md="6">
+                        <MDBCard>
+                            <MDBCardBody>
+                                <form>
+                                    <p className="h4 text-center py-4">Subscribe</p>
+                                    <label
+                                        htmlFor="defaultFormCardNameEx"
+                                        className="grey-text font-weight-light"
+                                    >
+                                        Your name
+                </label>
+                                    <input
+                                        type="text"
+                                        id="defaultFormCardNameEx"
+                                        className="form-control"
+                                    />
+                                    <br />
+                                    <label
+                                        htmlFor="defaultFormCardEmailEx"
+                                        className="grey-text font-weight-light"
+                                    >
+                                        Your email
+                </label>
+                                    <input
+                                        type="email"
+                                        id="defaultFormCardEmailEx"
+                                        className="form-control"
+                                    />
+                                    <div className="text-center py-4 mt-3">
+                                        <MDBBtn className="btn btn-outline-purple" type="submit">
+                                            Send
+                    <MDBIcon far icon="paper-plane" className="ml-2" />
+                                        </MDBBtn>
+                                    </div>
+                                </form>
+                            </MDBCardBody>
+                        </MDBCard>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
         </div>
+    );
+};
 
-    )
-}
-
-export default SignUp;
+export default FormPage;

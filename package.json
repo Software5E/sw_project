@@ -45,6 +45,7 @@
   },
   "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme",
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^2.1.2"
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "react-social-icons": "^4.1.0"
   }
 }
