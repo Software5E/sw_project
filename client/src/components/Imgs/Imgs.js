@@ -6,44 +6,42 @@ require('react-dom');
 window.React2 = require('react');
 console.log(window.React1 === window.React2);
 
-
-
 function Imgs() {
     return (
         <Carousel>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
+                    src="/facial.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3>Facial Recognition Technology</h3>
+                    <p>The most powerful and secure way to secure your home or office</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    src="/august.jpg"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Design</h3>
+                    <p>The most elegant smart lock available</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src="/august2.png"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3>Multiplatform</h3>
+                    <p>Use all the tools available for maximum security</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel >

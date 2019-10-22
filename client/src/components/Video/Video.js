@@ -1,9 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Video.css';
-
-
-
 
 const Video = () => {
     return (
@@ -11,7 +7,7 @@ const Video = () => {
         <div className="videoTag" class="embed-responsive embed-responsive-16by9">
             <iframe src='https://www.youtube.com/embed/xp30DZNphGE?autoplay=1&showinfo=0&controls=0&loop=1'
                 frameBorder='0'
-                allow='autoplay; encrypted-media'
+                allow='encrypted-media'
                 allowFullScreen
                 title='video'
             />

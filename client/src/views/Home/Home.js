@@ -1,16 +1,12 @@
 import React from 'react';
-import './Home.css';
+//import './Home.css';
 import Video from "../../components/Video/Video"
-import Carousel from "../../components/Carousel/Carousel"
-import { Modal, Button, ButtonToolbar } from 'react-bootstrap';
-
-
-
-
+import Imgs from "../../components/Imgs/Imgs"
+import SignUp from "../../components/SignUp/SignUp"
+//import Container from 'react-bootstrap/Container';
 function Home() {
-    const [modalShow, setModalShow] = React.useState(false);
     return (
-        <div><Video /> <div><Carousel /></div></div >
+        <div><Video /><div><Imgs /></div><div><SignUp /></div></div>
     );
 }
 
