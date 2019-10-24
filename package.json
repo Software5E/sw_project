@@ -41,6 +41,7 @@
     "react-router-dom": "^5.1.2",
     "should": "^13.2.3",
     "supertest": "^4.0.2",
+    "test": "^0.6.0",
     "typescript": "^3.6.4"
   },
   "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme",
