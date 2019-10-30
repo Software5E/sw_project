@@ -14,13 +14,15 @@ const Footer = () => {
                     &copy; {new Date().getFullYear()} Copyright: <a href={'Home'}>FaceR.com </a>
                 </MDBContainer>
             </div>
-            <div className="footer-copyright text-right ">
-                <MDBContainer fluid>
+            <div className="footer-copyright text-right" id='socials' >
+              <div className={"text-center"}>
+                <MDBContainer fluid className={"SocialContainer"} >
                     <SocialIcon url="http://twitter.com/facer" />
                     <SocialIcon url="http://youtube.com/facer" />
                     <SocialIcon url="http://instagram.com/facer" />
                     <SocialIcon url="https://www.kickstarter.com/facer" />
                 </MDBContainer>
+              </div>
             </div>
         </Navbar >
 
