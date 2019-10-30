@@ -9,7 +9,7 @@ import SignUp from "./components/SignUp/SignUp"
 import Container from 'react-bootstrap/Container';
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 

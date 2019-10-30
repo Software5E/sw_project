@@ -5,14 +5,11 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from "mdbreact";
 import { Navbar } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
-
-
-
 const Footer = () => {
     return (
 
         <Navbar bg="dark" expand="lg" fixed="bottom">
-            <div class="container text-center">
+            <div className="container text-center">
                 <MDBContainer fluid>
                     &copy; {new Date().getFullYear()} Copyright: <a href={'Home'}>FaceR.com </a>
                 </MDBContainer>
