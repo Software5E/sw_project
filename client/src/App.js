@@ -10,23 +10,31 @@ import Container from 'react-bootstrap/Container';
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 class App extends Component {
 
   render() {
 
     return (
-      <main style={{ background: 'black' }}>
-        < Toolbar /><Switch>
-          <Route exact path="/Home" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/">
-            <Redirect to="/Home" />
-          </Route>
-          <Route component={NotFound} />
-        </Switch>
-        <Footer />
-      </main >
+        <div>
+            <header>
+                <div>
+                    <Toolbar fixed="top"/>
+                </div>
+            </header>
+          <div style={{ background: 'black' }}>
+            <Switch>
+              <Route exact path="/Home" component={Home} />
+              <Route exact path="/About" component={About} />
+              <Route exact path="/">
+                <Redirect to="/Home" />
+              </Route>
+              <Route component={NotFound} />
+            </Switch>
+          </div >
+            <Footer />
+        </div>
     );
   }
 }

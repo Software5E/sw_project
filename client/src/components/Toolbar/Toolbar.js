@@ -5,7 +5,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 
 const toolbar = props => (
-    <Navbar bg="light" expand="lg">
+    <Navbar fixed='top' bg="light" expand="lg">
         <Navbar.Brand href={'Home'}>  <img
             alt=""
             src="/FaceR.png"
