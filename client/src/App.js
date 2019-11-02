@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+
 
 class App extends Component {
 
@@ -19,9 +19,7 @@ class App extends Component {
     return (
         <div>
             <header>
-                <div>
-                    <Toolbar fixed="top"/>
-                </div>
+                <Toolbar/>
             </header>
           <div style={{ background: 'black' }}>
             <Switch>

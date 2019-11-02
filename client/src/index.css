@@ -11,7 +11,3 @@ body{
 .root {
     background-color: #121212;
 }
-.toolBar {
-    position: sticky !important;
-    top: 0 !important;
-}
