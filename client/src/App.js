@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from "./views/Home/Home"
 import About from "./views/About/About"
+import AdminList from "./views/AdminList/AdminList"
 import NotFound from "./views/NotFound"
 import Footer from "./components/Footer/Footer"
 import Toolbar from "./components/Toolbar/Toolbar"
@@ -22,6 +23,7 @@ class App extends Component {
         < Toolbar /><Switch>
           <Route exact path="/Home" component={Home} />
           <Route exact path="/About" component={About} />
+          <Route exact path="/Admin/list" component={AdminList} />
           <Route exact path="/">
             <Redirect to="/Home" />
           </Route>
