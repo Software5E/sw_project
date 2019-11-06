@@ -1,6 +1,6 @@
 import React from 'react';
 import Toolbar from '../../components/Toolbar/Toolbar'
-//import './Home.css';
+import './Home.css';
 import Video from "../../components/Video/Video"
 import Imgs from "../../components/Imgs/Imgs"
 import SignUp from "../../components/SignUp/SignUp"
@@ -14,9 +14,6 @@ function Home() {
             </div>
             <div>
                 <Imgs />
-            </div>
-            <div>
-                {/*<SignUp />*/}
             </div>
         </div>
     );
