@@ -1,6 +1,6 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
-//import './Footer.css';
+import './Footer.css';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBInput } from "mdbreact";
 import { Navbar } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
@@ -10,7 +10,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     return (
-
+    <div className="footer">
         <Navbar bg="dark" expand="lg" fixed="bottom">
             <div class="container text-center">
                 <MDBContainer fluid>
@@ -26,7 +26,7 @@ const Footer = () => {
                 </MDBContainer>
             </div>
         </Navbar >
-
+    </div>
     )
 };
 

@@ -3,10 +3,11 @@ import React from 'react';
 import Video from "../../components/Video/Video"
 import Imgs from "../../components/Imgs/Imgs"
 import SignUp from "../../components/SignUp/SignUp"
-//import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
+// proper layout
 function Home() {
     return (
-        <div><Video /><div><Imgs /></div><div>{/*<SignUp />*/}</div></div>
+        <div><Video /><div><Imgs /></div><div>{<SignUp />}</div></div>
     );
 }
 

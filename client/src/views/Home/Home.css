@@ -19,3 +19,14 @@
 .App-link {
     color: #09d3ac;
 }
+
+/* for left float signup component, add rows, etc.
+.column1 {
+	float: left;
+	width: 30%;
+}
+.column2 {
+	float: left;
+	width: 70%;
+}
+*/
