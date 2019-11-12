@@ -1,13 +1,11 @@
 import React from 'react';
-import './About.css';
-
+import AboutUs from '../../components/AboutUs/AboutUs'
+import '../../components/AboutUs/AboutUs.css'
 function About() {
-
     return (
-        <div className='about'>
-            About Us
-            <p>Test Paragraph</p>
-        </div>
+      <div class="setup">
+        <AboutUs/>
+      </div>
     );
 }
 
