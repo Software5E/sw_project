@@ -27,7 +27,8 @@ module.exports.init = function () {
     app.use(express.static(path.join(__dirname, '../../client/build')));
 
     //add a router
-    app.use('/api/example', exampleRouter);
+    // app.use('/api/example', exampleRouter);
+    
 
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
