@@ -7,7 +7,7 @@ var SubscriptionSchema = new Schema({
     
 });
 
-var Subscriptions = mongoose.model('Subscriptions', SubscriptionSchema);
+var Subscription = mongoose.model('Subscription', SubscriptionSchema);
 
 /* Export the model to make it avaiable to other parts of your Node application */
-module.exports = Subscriptions;
+module.exports = Subscription;
