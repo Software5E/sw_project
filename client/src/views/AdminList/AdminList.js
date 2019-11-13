@@ -11,7 +11,6 @@ function AdminList() {
                 <li>Email2@hotmail.com</li>
                 <li>Email3@aol.com</li>
             </ul>
-
         </div>
     );
 }
