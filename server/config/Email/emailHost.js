@@ -3,6 +3,6 @@ const sendMail = require('./send');
 const config = require('./emailConfig');
 module.exports = async (html) => {
     for (const email of emails){
-        await sendMail('haydenmenge@gmail.com', 'Subject', 'Placeholder Text', html);
+        await sendMail(email, 'Subject', 'Placeholder Text', html);
     }
 };

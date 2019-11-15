@@ -1,4 +1,4 @@
 module.exports = [
     'haydenmenge@gmail.com',
-    'haydenmenge@ufl.edu'
+    'alex.miguel561@gmail.com'
 ];

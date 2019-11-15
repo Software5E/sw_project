@@ -6,7 +6,6 @@ module.exports = async (to, subject_line, message, html) => {
     const transporter = nodemailer.createTransport({
         port: 465,
         host: 'smtp.zoho.com',
-        ignoreTLS: true,
         auth: {
             user: config.user,
             pass: config.pass
@@ -31,6 +30,5 @@ module.exports = async (to, subject_line, message, html) => {
                 resolve();
             }
         });
-
     });
 };
