@@ -12,14 +12,14 @@ module.exports = async (to, subject_line, message, html) => {
     });
 
     let mailOptions = {
-        from: 'FaceR <noreply@faceR.com>',
+        from: 'FaceR <facerlock@gmail.com>',
         to: to,
         subject: subject_line,
         text: message,
         html: html
     };
 
-    let promise = new Promise((resolve, reject) => {
+    return promise = new Promise((resolve, reject) => {
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
                 console.log(error);
@@ -31,7 +31,6 @@ module.exports = async (to, subject_line, message, html) => {
         });
 
     });
-    return promise;
 
 
 
