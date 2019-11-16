@@ -17,8 +17,8 @@ exports.create = function(req, res) {
       console.log(err);
       res.status(400).send(err);
     } else {
-      res.json(listing);
-      console.log(listing)
+      res.json(subscrip);
+      console.log(subscrip)
     }
   });
 }
@@ -63,7 +63,7 @@ exports.delete = function(req, res) {
 };
 
 /* 
-  Middleware: find a listing by its ID, then pass it to the next request handler. 
+  Middleware: find a subscription by its ID, then pass it to the next request handler. 
 
   HINT: Find the listing using a mongoose query, 
         bind it to the request object as the property 'listing', 

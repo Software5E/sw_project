@@ -4,7 +4,7 @@ var path = require('path'),
     config = require('./config'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    exampleRouter = require('../routes/examples.server.routes')
+    exampleRouter = require('../routes/subscription.server.routes')
 
 module.exports.init = function () {
     //connect to database

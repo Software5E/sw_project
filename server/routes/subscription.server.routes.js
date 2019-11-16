@@ -5,4 +5,7 @@ var subscriptions = require('../controllers/subscription.server.controller.js'),
 router.route('/')
   .get(examples.hello);
   
+
+router.param('subscriptionId', subscriptions.subscriptionById);
+  
 module.exports = router;
