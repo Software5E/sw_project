@@ -3,7 +3,7 @@ import './AdminList.css'
 
 function AdminList() {
     return (
-        <div>
+        <div >
             <h1>Newsletter List</h1>
             <p>List of Newsletter emails in an easy to view style</p>
             <ul>
