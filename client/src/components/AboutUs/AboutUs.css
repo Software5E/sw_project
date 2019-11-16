@@ -10,6 +10,11 @@
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
     /*color: #fff;*/
+
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: 30px;
+      }
 }
 .About-Container {
     display: column;

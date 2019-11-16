@@ -1,7 +1,5 @@
 import React from 'react'
 import './AboutUs.css'
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
 
 class AboutUs extends React.Component {
 
