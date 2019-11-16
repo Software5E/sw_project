@@ -15,6 +15,9 @@ function Home() {
             <div>
                 <Imgs />
             </div>
+            <div>
+                <SignUp />
+            </div>
         </div>
     );
 }
