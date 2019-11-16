@@ -21,6 +21,7 @@ const FormPage = () => {
                                         type="text"
                                         id="defaultFormCardNameEx"
                                         className="form-control"
+
                                     />
                                     <br />
                                     <label

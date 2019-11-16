@@ -11,9 +11,20 @@ import Container from 'react-bootstrap/Container';
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+//import axios from 'axios';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      name: '',
+      email: '',
+    };
+  }
+
+
 
   render() {
 

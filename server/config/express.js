@@ -8,9 +8,9 @@ var path = require('path'),
 
 module.exports.init = function () {
     //connect to database
-    // mongoose.connect(config.db.uri, {
-    //     useNewUrlParser: true
-    // });
+    mongoose.connect(config.db.uri, {
+         useNewUrlParser: true
+    });
     // mongoose.set('useCreateIndex', true);
     // mongoose.set('useFindAndModify', false);
 

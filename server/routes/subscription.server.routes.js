@@ -1,4 +1,4 @@
-var examples = require('../controllers/examples.server.controller.js'), 
+var subscriptions = require('../controllers/subscription.server.controller.js'), 
     express = require('express'), 
     router = express.Router()
 
