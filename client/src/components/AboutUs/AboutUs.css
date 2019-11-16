@@ -2,6 +2,7 @@
     background-color: #fff;
     text-align: center;
     font-size: 50px;
+    background-color: #1C1919;
 }
 .title {
     text-align: center;
@@ -9,6 +10,7 @@
     margin: 0px 200px 300px;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
     /*color: #fff;*/
 
     @media (max-width: 767px) {
@@ -47,7 +49,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #3CB371;
+    /*background-color: #3CB371;*/
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
