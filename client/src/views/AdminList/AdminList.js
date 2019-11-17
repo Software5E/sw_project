@@ -1,9 +1,9 @@
 import React from 'react';
-import './AdminList.css'
+import './AdminList.css';
 
 function AdminList() {
     return (
-        <div >
+        <div className="list">
             <h1>Newsletter List</h1>
             <p>List of Newsletter emails in an easy to view style</p>
             <ul>

@@ -1,3 +1,8 @@
+.list{
+  background: white;
+  position: left;
+}
+
 ul {
     padding: 0;
   }
