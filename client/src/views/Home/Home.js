@@ -8,12 +8,16 @@ import SignUp from "../../components/SignUp/SignUp"
 function Home() {
     return (
 
-        <div>
-            <div>
-                <Video />
+        <div className="container-fluid">
+            <div className="row h-100">
+                
+                    <Video />
+               
             </div>
-            <div>
-                <Imgs />
+            <div className="row h-100">
+            
+                    <Imgs />
+                
             </div>
         </div>
     );
