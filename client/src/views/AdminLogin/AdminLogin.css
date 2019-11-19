@@ -12,8 +12,8 @@ body,
     align-items: center;
     flex-direction: column;
     background: white;
-    padding-top: 10%;
-    padding-bottom:90%;
+    padding-top: 150px;
+    padding-bottom: 260px;
 }
 
 .box-container {
@@ -135,20 +135,4 @@ body,
     height: 6px;
     flex: 1;
     visibility: hidden;
-}
-
-.pwd-weak {
-    background-color: #e74c3c;
-}
-
-.pwd-medium {
-    background-color: #3498db;
-}
-
-.pwd-strong {
-    background-color: #2ecc71;
-}
-
-.show {
-    visibility: visible;
 }

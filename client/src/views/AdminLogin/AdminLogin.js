@@ -4,16 +4,29 @@ import './AdminLogin.css'
 class AdminLogin extends React.Component {
     constructor(props){
         super(props)
-        this.state={pass: "p@ssw0rd", name: "admin"}
+        this.state={}
+        this.handleChange = this.handleChange.bind(this);
     }
 
-    submitLogin(e) {
-        console.log(this.uText)
-        if (this.uText.username === this.state.name && this.pText.pass === this.state.pass){
+    submitLogin() {
+        const pass = "password"
+        const name = "admin"
+        console.log(this.state.username, this.state.password)
+        if ((this.state.username == name) && (this.state.password == pass)){
             //route to newsletter list
+            console.log("The name and pass were correct.")
         }else {
             //say password is not correct
+            console.log("The name and pass were NOT correct.")
+            console.log(this.state.username, this.state.password, name, pass)
         }
+    }
+
+    handleChange({ target }) {
+        this.setState({
+          [target.name]: target.value
+        });
+ 
     }
 
     render (){
@@ -26,11 +39,11 @@ class AdminLogin extends React.Component {
                         <div className="box">
                             <div className="input-group">
                                 <label className="login-label" htmlFor="username">Username</label>
-                                <input type="text" name="username" className="login-input" placeholder="Username" ref={(username) => this.uText = username}/>
+                                <input type="text" name="username" className="login-input" placeholder="Username" onChange={this.handleChange}/>
                             </div>
                             <div className="input-group">
                                 <label className="login-label" htmlFor="password">Password</label>
-                                <input type="password" name="password" className="login-input" placeholder="Password" ref={(pass) => this.pText = pass}/>
+                                <input type="password" name="password" className="login-input" placeholder="Password" onChange={this.handleChange}/>
                             </div>
                             <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
                         </div>
