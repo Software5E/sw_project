@@ -7,7 +7,6 @@ var mongoose = require('mongoose'),
 var SubscriptionSchema = new Schema({
     name: { type: String, required: true },
     email: { type: String, required: true }
-    
 });
 
 // Create a 'pre' function that adds the updated_at (and created_at if not already there) property 

@@ -4,6 +4,9 @@ var subscriptions = require('../controllers/subscription.server.controller.js'),
 
 router.route('/')
   .get(examples.hello);
+
+router.route('/signup')
+  .post(subscriptions.create);
   
 
 router.param('subscriptionId', subscriptions.subscriptionById);

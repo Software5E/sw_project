@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import './SignUp.css';
+import axios from 'axios';
 const FormPage = () => {
     return (
         <div className="formPage">
