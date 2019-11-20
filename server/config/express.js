@@ -4,7 +4,7 @@ var path = require('path'),
     config = require('./config'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    exampleRouter = require('../routes/subscription.server.routes')
+    subscriptionRouter = require('../routes/subscription.server.routes')
 
 module.exports.init = function () {
     //connect to database
@@ -27,7 +27,7 @@ module.exports.init = function () {
     app.use(express.static(path.join(__dirname, '../../client/build')));
 
     //add a router
-    app.use('/api/example', exampleRouter);
+    app.use('/api/subscriptions', subscriptionRouter);
 
     //all other requests send to the homepage
     app.get('*', (req,res) =>{

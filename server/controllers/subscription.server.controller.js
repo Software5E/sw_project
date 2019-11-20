@@ -62,6 +62,19 @@ exports.delete = function(req, res) {
     });
 };
 
+/* Retreive all the directory listings, sorted alphabetically by listing code */
+exports.list = function(req, res) {
+
+  Subscription.find({}).sort('name').exec(function(err, subscrips) {
+    if(err)
+    {
+      res.send(err);
+    }
+    //console.log(listings);
+    res.json(subscrips)
+  }); 
+};
+
 /* 
   Middleware: find a subscription by its ID, then pass it to the next request handler. 
 

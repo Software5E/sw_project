@@ -1,5 +1,5 @@
 module.exports = {
     db: {
-        uri: 'mongodb+srv://FaceR-Admin:Faceradtmp12345@subscriptiondb-uxxkh.mongodb.net/test?retryWrites=true&w=majority' 
+        uri: 'mongodb+srv://FaceR-Admin:Faceradtmp12345@subscriptiondb-uxxkh.mongodb.net/user-data?retryWrites=true&w=majority' 
     }
   };
