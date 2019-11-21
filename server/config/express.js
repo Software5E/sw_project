@@ -4,7 +4,11 @@ var path = require('path'),
     config = require('./config'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    exampleRouter = require('../routes/examples.server.routes')
+    sendMail = require('./Email/send');
+    fs = require('fs');
+    emails = require('./Email/emailList');
+    host = require('./Email/emailHost');
+    //exampleRouter = require('../routes/examples.server.routes')
 
 module.exports.init = function () {
     //connect to database
@@ -27,7 +31,15 @@ module.exports.init = function () {
     app.use(express.static(path.join(__dirname, '../../client/build')));
 
     //add a router
-    app.use('/api/example', exampleRouter);
+    //app.use('/api/example', exampleRouter);
+    app.put('/email',(req,res) => {
+        //Need to receive file from admin console
+        fs.readFile(path.join(__dirname,"/Email/NewsLetter/letter.html"), (err,data) => {
+            if (err) throw err;
+            host(data);
+        });
+        res.send('Emails Sent');
+    });
 
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
