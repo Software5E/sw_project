@@ -88,4 +88,12 @@ afterEach(function(done) {
    done();
  }
 });
+
+//mongoDB connection closed 
+after(function(done) {
+  mongoose.connection.close();
+  console.log(mongoose.connection);
+  done();
+})
+
 });

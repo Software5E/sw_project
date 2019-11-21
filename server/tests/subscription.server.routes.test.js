@@ -1,6 +1,7 @@
 var should = require('should'), 
     request = require('supertest'), 
-    express = require('../config/express'), 
+    express = require('../config/express'),
+    mongoose = require('mongoose'),  
     Subscription = require('../models/subscription.server.model.js');
 
 /* Global variables */
@@ -162,6 +163,13 @@ describe('Subscription CRUD tests', function() {
         done();
       });
     }else done();
-  }); 
+  });
+
+  //closes mongoDB connection 
+  after(function(done) {
+    mongoose.connection.close();
+    console.log(mongoose.connection);
+    done();
+  })
   
 });
