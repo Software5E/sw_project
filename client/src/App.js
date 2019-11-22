@@ -9,6 +9,7 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import AdminLogin from "./views/AdminLogin/AdminLogin";
 import SignUp from "./components/SignUp/SignUp";
 import Container from 'react-bootstrap/Container';
+import {ProtectedRoute} from './components/protectedRoute/ProtectedRoute'
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +30,7 @@ class App extends Component {
                 <Switch>
                   <Route exact path="/Home" component={Home} />
                   <Route exact path="/About" component={About} />
-                  <Route exact path="/List" component={AdminList} />
+                  <ProtectedRoute exact path="/List" component={AdminList} />
                   <Route exact path="/Admin" component={AdminLogin} />
                   <Route exact path="/">
                     <Redirect to="/Home" />

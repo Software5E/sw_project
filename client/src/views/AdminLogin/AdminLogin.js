@@ -1,5 +1,7 @@
 import React from 'react';
-import './AdminLogin.css'
+import auth from '../../components/Auth/auth';
+
+import './AdminLogin.css';
 
 class AdminLogin extends React.Component {
     constructor(props){
@@ -11,14 +13,22 @@ class AdminLogin extends React.Component {
     submitLogin() {
         const pass = "password"
         const name = "admin"
-        console.log(this.state.username, this.state.password)
         if ((this.state.username == name) && (this.state.password == pass)){
             //route to newsletter list
             console.log("The name and pass were correct.")
+            return(
+                auth.login(() =>{
+                    console.log(auth.authenticated)
+                    this.props.history.push('/list')
+                })
+            );
+
         }else {
             //say password is not correct
             console.log("The name and pass were NOT correct.")
-            console.log(this.state.username, this.state.password, name, pass)
+            return(
+                this.props.history.push('/admin')
+            );
         }
     }
 
