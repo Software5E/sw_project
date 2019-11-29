@@ -101,6 +101,7 @@ To deploy this system, we will use Heroku as our web server host, and AWS for ou
 * **Santiago Romero**
 * **Zoe Seibert**
 * **Hayden Menge**
+* **Hannah McEachern**
 * See also the list of [contributors](https://github.com/orgs/Software5E/people) who participated in this project.
 
 ## License
