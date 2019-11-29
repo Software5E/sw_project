@@ -9,7 +9,7 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import AdminLogin from "./views/AdminLogin/AdminLogin";
 import SignUp from "./components/SignUp/SignUp";
 import Container from 'react-bootstrap/Container';
-import {ProtectedRoute} from './components/protectedRoute/ProtectedRoute'
+import {ProtectedRoute} from './components/ProtectedRoute/ProtectedRoute'
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
