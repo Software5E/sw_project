@@ -4,7 +4,8 @@ var path = require('path'),
     config = require('./config'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    subscriptionRouter = require('../routes/subscription.server.routes')
+    subscriptionRouter = require('../routes/subscription.server.routes'),
+    cors = require('cors')
 
 module.exports.init = function () {
     //connect to database
@@ -17,6 +18,8 @@ module.exports.init = function () {
     //initialize app
     var app = express();
 
+    app.use(cors())
+
     //enable request logging for development debugging
     app.use(morgan('dev'));
 
@@ -27,11 +30,11 @@ module.exports.init = function () {
     app.use(express.static(path.join(__dirname, '../../client/build')));
 
     //add a router
-    app.use('/api/subscriptions', subscriptionRouter);
+    app.use('/signup', subscriptionRouter);
 
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
-        res.sendFile(path.join(__dirname + '../../../client/build/index.html'));
+        res.sendFile(path.join(__dirname + '../../../client/public/index.html'));
     });
 
     return app;

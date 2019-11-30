@@ -21,7 +21,7 @@ describe('Subscription CRUD tests', function() {
   });
 
   it('should be able to retrieve all subscriptions', function(done) {
-    agent.get('/api/subscriptions')
+    agent.get('/signup')
       .expect(200)
       .end(function(err, res) {
         should.not.exist(err);
@@ -35,7 +35,7 @@ describe('Subscription CRUD tests', function() {
       if(err) {
         console.log(err);
       } else {
-        agent.get('/api/subscriptions/' + subscription._id)
+        agent.get('/signup/' + subscription._id)
           .expect(200)
           .end(function(err, res) {
             should.not.exist(err);
@@ -54,7 +54,7 @@ describe('Subscription CRUD tests', function() {
       name: 'Sara Gaya', 
       email: 'sgaya16@ufl.edu' 
     };
-    agent.post('/api/subscriptions')
+    agent.post('/signup')
       .send(subscription)
       .expect(200)
       .end(function(err, res) {
@@ -75,7 +75,7 @@ describe('Subscription CRUD tests', function() {
       email: 'saracgaya@gmail.com'
     };
 
-    agent.put('/api/subscriptions/' + id)
+    agent.put('/signup/' + id)
       .send(updatedSubscription)
       .expect(200)
       .end(function(err, res) {
@@ -88,13 +88,13 @@ describe('Subscription CRUD tests', function() {
   });
 
   it('should be able to delete a subscription', function(done) {
-    agent.delete('/api/subscriptions/' + id)
+    agent.delete('/signup/' + id)
       .expect(200)
       .end(function(err, res) {
         should.not.exist(err);
         should.exist(res);
 
-        agent.get('/api/subscriptions/' + id) 
+        agent.get('/signup/' + id) 
           .expect(400)
           .end(function(err, res) {
             id = undefined;
@@ -151,6 +151,7 @@ describe('Subscription CRUD tests', function() {
       })
   });
   */
+ 
   after(function(done) {
     if(id) {
       Subscription.deleteOne({_id: id}, function(err){

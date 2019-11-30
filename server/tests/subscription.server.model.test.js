@@ -77,7 +77,7 @@ describe('Saving to database', function() {
  });
 
 });
-
+/*
 afterEach(function(done) {
  if(id) {
    Subscription.deleteOne({ _id: id }).exec(function() {
@@ -88,7 +88,7 @@ afterEach(function(done) {
    done();
  }
 });
-
+*/
 //mongoDB connection closed 
 after(function(done) {
   mongoose.connection.close();

@@ -7,6 +7,9 @@ router.route('/')
   .get(examples.hello);
   */
 
+  router.route('/signup')
+  .post(subscriptions.create);
+
   router.route('/')
   .get(subscriptions.list)
   .post(subscriptions.create);

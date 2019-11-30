@@ -14,11 +14,11 @@ exports.create = function(req, res) {
     //Then save the listing 
   subscrip.save(function(err) {
     if(err) {
-      console.log(err);
+      console.log('error! signup not added successfully');
       res.status(400).send(err);
     } else {
       res.json(subscrip);
-      console.log(subscrip)
+      console.log('signup added successfully!')
     }
   });
 }
