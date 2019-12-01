@@ -52,5 +52,5 @@
     "react-router-dom": "^5.1.2",
     "react-social-icons": "^4.1.0"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:80"
 }

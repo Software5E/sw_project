@@ -34,6 +34,8 @@ class FormPage extends React.Component {
             console.log('post to db failed')
         });
 
+        e.target.reset()
+
     }
     
     
