@@ -10,8 +10,8 @@ const Footer = () => {
 
         <Navbar bg="dark" expand="lg" fixed="bottom" className='foot'>
             <div className="container text-center">
-                <MDBContainer fluid>
-                    &copy; {new Date().getFullYear()} Copyright: <a href={'Home'}>FaceR.com </a>
+                <MDBContainer fluid >
+                    &copy; {new Date().getFullYear() } Copyright: <a href={'Home'}>FaceR.com </a>
                 </MDBContainer>
             </div>
             <div className="footer-copyright text-right" id='socials' >
