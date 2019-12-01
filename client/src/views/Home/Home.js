@@ -7,13 +7,15 @@ import SignUp from "../../components/SignUp/SignUp"
 //import Container from 'react-bootstrap/Container';
 function Home() {
     return (
-
         <div>
             <div>
                 <Video />
             </div>
             <div>
                 <Imgs />
+            </div>
+            <div>
+                <SignUp />
             </div>
         </div>
     );

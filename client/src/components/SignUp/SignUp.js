@@ -1,7 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import './SignUp.css';
-const FormPage = () => {
+import axios from 'axios';
+
+class FormPage extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+            name: '',
+            email: ''
+         };
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+
+   onSubmit(e)
+    {
+        e.preventDefault();
+
+        let user = {};
+        user.name = e.target[0].value
+        user.email = e.target[1].value
+
+        console.log('username: ', user.name);
+        console.log('useremail: ', user.email);
+
+        axios.post('/signup', user)
+        .then(res => {
+            console.log(res)
+            console.log('post to db succeeded!')
+        })
+        .catch(err => {
+            console.log(err)
+            console.log('post to db failed')
+        });
+
+    }
+    
+    
+    render() {
     return (
         <div className="formPage">
             <MDBContainer>
@@ -9,7 +45,7 @@ const FormPage = () => {
                     <MDBCol md="6">
                         <MDBCard>
                             <MDBCardBody>
-                                <form>
+                                <form onSubmit={this.onSubmit}>
                                     <p className="h4 text-center py-4">Subscribe</p>
                                     <label
                                         htmlFor="defaultFormCardNameEx"
@@ -21,6 +57,8 @@ const FormPage = () => {
                                         type="text"
                                         id="defaultFormCardNameEx"
                                         className="form-control"
+                                        name="name"
+
                                     />
                                     <br />
                                     <label
@@ -33,6 +71,7 @@ const FormPage = () => {
                                         type="email"
                                         id="defaultFormCardEmailEx"
                                         className="form-control"
+                                        name="email"
                                     />
                                     <div className="text-center py-4 mt-3">
                                         <MDBBtn className="btn btn-outline-purple" type="submit">
@@ -48,6 +87,7 @@ const FormPage = () => {
             </MDBContainer>
         </div>
     );
+    }
 };
 
 export default FormPage;

@@ -9,20 +9,24 @@ var path = require('path'),
     emails = require('./Email/emailList');
     host = require('./Email/emailHost');
     //exampleRouter = require('../routes/examples.server.routes')
+    subscriptionRouter = require('../routes/subscription.server.routes')
+    const cors = require("cors");
 
 module.exports.init = function () {
     //connect to database
-    // mongoose.connect(config.db.uri, {
-    //     useNewUrlParser: true
-    // });
-    // mongoose.set('useCreateIndex', true);
-    // mongoose.set('useFindAndModify', false);
+    mongoose.connect(config.db.uri, {
+         useNewUrlParser: true, useUnifiedTopology: true
+    });
+    mongoose.set('useCreateIndex', true);
+    mongoose.set('useFindAndModify', false);
 
     //initialize app
     var app = express();
 
     //enable request logging for development debugging
     app.use(morgan('dev'));
+
+    app.use(cors());
 
     //body parsing middleware 
     app.use(bodyParser.json());
@@ -40,9 +44,11 @@ module.exports.init = function () {
         });
         res.send('Emails Sent');
     });
+    app.use('/signup', subscriptionRouter);
+
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
-        res.sendFile(path.join(__dirname + '../../../client/build/index.html'));
+        res.sendFile(path.join(__dirname + '../../../client/public/index.html'));
     });
 
     return app;

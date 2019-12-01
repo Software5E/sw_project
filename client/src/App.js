@@ -14,9 +14,20 @@ import {ProtectedRoute} from './components/ProtectedRoute/ProtectedRoute'
 //import BackDrop from './components/BackDrop/BackDrop';
 import './bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+//import axios from 'axios';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      name: '',
+      email: '',
+    };
+  }
+
+
 
   render() {
 
@@ -32,6 +43,7 @@ class App extends Component {
                   <Route exact path="/About" component={About} />
                   <ProtectedRoute exact path="/List" component={AdminList} />
                   <Route exact path="/Admin" component={AdminLogin} />
+                  <Route exact path="/signup" component={Home} />
                   <Route exact path="/">
                     <Redirect to="/Home" />
                   </Route>
