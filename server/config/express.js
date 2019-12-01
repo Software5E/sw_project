@@ -4,8 +4,8 @@ var path = require('path'),
     config = require('./config'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    subscriptionRouter = require('../routes/subscription.server.routes'),
-    cors = require('cors')
+    subscriptionRouter = require('../routes/subscription.server.routes')
+    const cors = require("cors");
 
 module.exports.init = function () {
     //connect to database
@@ -18,10 +18,10 @@ module.exports.init = function () {
     //initialize app
     var app = express();
 
-    app.use(cors())
-
     //enable request logging for development debugging
     app.use(morgan('dev'));
+
+    app.use(cors());
 
     //body parsing middleware 
     app.use(bodyParser.json());

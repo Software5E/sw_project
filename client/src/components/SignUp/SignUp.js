@@ -1,49 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 import './SignUp.css';
 import axios from 'axios';
-export default class FormPage extends React.Component {
+
+class FormPage extends React.Component {
 	constructor() {
 		super();
 		this.state = {
             name: '',
             email: ''
          };
-        // this.onSubmit = this.onSubmit.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
-    
-    /*onSubmit(e)
+
+   onSubmit(e)
     {
         e.preventDefault();
 
-        var username = e.target[0].value
-        var useremail = e.target[1].value
-        //console.log('name: ', e.target[0].value);
-        //console.log('email: ', e.target[1].value);
-        
-        this.setState({ name: username, email: useremail }, () => {
-            console.log('name: ', this.state.name);
-            console.log('email: ', this.state.email);
-          }); 
+        let user = {};
+        user.name = e.target[0].value
+        user.email = e.target[1].value
 
-        const user = {
-            name: this.state.name,
-            email: this.state.email
-        }
+        console.log('username: ', user.name);
+        console.log('useremail: ', user.email);
 
-        axios.post('http://localhost:3000/signup', {
-            name: user.name,
-            email: user.email
-        })
+        axios.post('/signup', user)
         .then(res => {
             console.log(res)
+            console.log('post to db succeeded!')
         })
         .catch(err => {
             console.log(err)
+            console.log('post to db failed')
         });
 
     }
-    */
+    
+    
     render() {
     return (
         <div className="formPage">
@@ -52,7 +45,7 @@ export default class FormPage extends React.Component {
                     <MDBCol md="6">
                         <MDBCard>
                             <MDBCardBody>
-                                <form action="/signup" method="post" /*onSubmit={this.onSubmit}*/>
+                                <form onSubmit={this.onSubmit}>
                                     <p className="h4 text-center py-4">Subscribe</p>
                                     <label
                                         htmlFor="defaultFormCardNameEx"
@@ -97,4 +90,4 @@ export default class FormPage extends React.Component {
     }
 };
 
-//export default FormPage;
+export default FormPage;
