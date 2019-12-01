@@ -41,12 +41,9 @@ class App extends Component {
                 <Switch>
                   <Route exact path="/Home" component={Home} />
                   <Route exact path="/About" component={About} />
-<<<<<<< HEAD
-                  <Route exact path="/signup" component={Home} />
-=======
                   <ProtectedRoute exact path="/List" component={AdminList} />
                   <Route exact path="/Admin" component={AdminLogin} />
->>>>>>> master
+                  <Route exact path="/signup" component={Home} />
                   <Route exact path="/">
                     <Redirect to="/Home" />
                   </Route>
