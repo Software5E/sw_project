@@ -11,6 +11,11 @@ var path = require('path'),
     //exampleRouter = require('../routes/examples.server.routes')
     subscriptionRouter = require('../routes/subscription.server.routes')
     const cors = require("cors");
+    sendMail = require('./Email/send');
+    fs = require('fs');
+    emails = require('./Email/emailList');
+    host = require('./Email/emailHost');
+    //exampleRouter = require('../routes/examples.server.routes')
 
 module.exports.init = function () {
     //connect to database
@@ -46,6 +51,15 @@ module.exports.init = function () {
     });
     app.use('/signup', subscriptionRouter);
 
+    //app.use('/api/example', exampleRouter);
+    app.put('/email',(req,res) => {
+        //Need to receive file from admin console
+        fs.readFile(path.join(__dirname,"/Email/NewsLetter/letter.html"), (err,data) => {
+            if (err) throw err;
+            host(data);
+        });
+        res.send('Emails Sent');
+    });
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
         res.sendFile(path.join(__dirname + '../../../client/public/index.html'));
