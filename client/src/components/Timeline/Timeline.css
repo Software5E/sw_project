@@ -1,0 +1,11 @@
+.block {
+    background-color: #FF0000;
+}
+.block-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.block-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}

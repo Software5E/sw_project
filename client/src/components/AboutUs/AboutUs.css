@@ -65,7 +65,8 @@
 .History-of-Locks-Info {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    margin: 0px 30px;
+    margin: 20px 30px;
+    text-align: center;
 }
 .accent {
     color: #32CD32;
@@ -78,4 +79,41 @@
     fill: #fff;
     border-bottom: 8px solid #fff;
     margin: 0px 30px 30px;
+}
+.Facer-Comparison {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*background-color: #3CB371;*/
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+.Facer-Comparison-Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 30px;
+    height: 90px;
+    margin-top: 13%;
+}
+.Facer-Comparison-Info {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.Scale-Image {
+    width:100vw;
+    height:100vh;
+    margin: 7% 0;
+}
+
+img {
+   max-width:100%;
+   height:auto;
+   max-height:100%;
+   margin: 0 6%;
 }
