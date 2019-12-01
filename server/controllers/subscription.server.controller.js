@@ -9,7 +9,7 @@ exports.hello = function(req, res) {
 exports.create = function(req, res) {
 
     //creates new subscription
-    console.log('inside create function');
+    //console.log('inside create function');
     console.log(req.body);
     var subscrip = new Subscription(req.body);
 
