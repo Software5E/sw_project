@@ -2,17 +2,18 @@ html{
 
    background-color: #9b9090 !important;
 }
+
 body{
     margin-top: 56px;
 }
 
-    body {
-        margin-bottom: 6vh;
-        padding: 0;
-        font-family: sans-serif;
+body {
+    margin-bottom: 6vh;
+    padding: 0;
+    font-family: sans-serif;
 
-    }
 }
+
 @media (min-width: 500px){
 
     body {

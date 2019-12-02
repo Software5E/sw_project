@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBBtn, MDBIcon } from "mdbreact";
+import { MDBContainer, MDBBtn, MDBIcon, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
 import "./SignUp.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
