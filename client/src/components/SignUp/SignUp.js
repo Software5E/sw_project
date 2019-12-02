@@ -4,6 +4,7 @@ import './SignUp.css';
 const FormPage = () => {
     return (
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <div className="formPage">
             <MDBContainer>
                 <MDBRow>
@@ -49,6 +50,8 @@ const FormPage = () => {
             </MDBContainer>
         </div>
 =======
+=======
+>>>>>>> Stashed changes
       
               <MDBCard className="mx-auto">
                 <MDBCardBody>
@@ -93,6 +96,9 @@ const FormPage = () => {
                 </MDBCardBody>
               </MDBCard>
             
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     );
 };
