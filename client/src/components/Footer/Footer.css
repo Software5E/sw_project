@@ -1,3 +1,13 @@
-.social{
-    margin: 0 2px;
+.social {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.foot {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.text-color {
+  color: #fff;
 }
