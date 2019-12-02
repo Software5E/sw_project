@@ -40,7 +40,6 @@ module.exports.init = function () {
         });
         res.send('Emails Sent');
     });
-
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
         res.sendFile(path.join(__dirname + '../../../client/build/index.html'));
