@@ -1,6 +1,39 @@
-.list{
+*{
+  box-sizing: border-box;
+}
+
+.root-container {
   background: white;
-  position: left;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-collumn{
+  float: left;
+  width: 50%;
+  padding-right: 100px;
+}
+
+.right-collumn{
+  float: right;
+  width: 50%;
+  padding-left: 100px;
+}
+
+.list{
+  text-align: left;
 }
 
 ul {
