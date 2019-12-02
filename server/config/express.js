@@ -14,7 +14,8 @@ var path = require("path"),
   sendMail = require("./Email/send"),
   fs = require("fs"),
   emails = require("./Email/emailList"),
-  host = require("./Email/emailHost");
+  host = require("./Email/emailHost"),
+  contact = require("./Email/ContactUs.js")
 //exampleRouter = require('../routes/examples.server.routes')
 
 module.exports.init = function() {
@@ -66,6 +67,12 @@ module.exports.init = function() {
       }
     );
     res.send("Emails Sent");
+  });
+
+  app.post("/contactUs", (req,res) => {
+    const subject = `Sent by ${req.body.name} from ${req.body.email}`;
+    contact(subject,req.body.message);
+    res.status(200);
   });
   
   //all other requests send to the homepage
