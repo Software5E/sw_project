@@ -62,7 +62,7 @@ module.exports.init = function () {
     });
     //all other requests send to the homepage
     app.get('*', (req,res) =>{
-        res.sendFile(path.join(__dirname + '../../../client/public/index.html'));
+        res.sendFile(path.join(__dirname + '../../../client/build/index.html'));
     });
 
     return app;
