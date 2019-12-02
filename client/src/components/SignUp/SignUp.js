@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer, MDBBtn, MDBIcon } from "mdbreact";
 import "./SignUp.css";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 class FormPage extends React.Component {
   constructor() {
     super();
@@ -53,9 +53,10 @@ class FormPage extends React.Component {
             </p>
 
             <p>
-              <a class="text-warning" href="" target="_blank">
+              <Link class="text-warning" to="/Nesletter">
                 See the last newsletter
-              </a>
+              </Link>{" "}
+              <MDBIcon icon="clipboard-list" />
             </p>
 
             <input
