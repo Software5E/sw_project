@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBIcon
-} from "mdbreact";
+import { MDBContainer, MDBBtn, MDBIcon } from "mdbreact";
 import "./SignUp.css";
 import axios from "axios";
 
@@ -48,9 +40,53 @@ class FormPage extends React.Component {
   render() {
     return (
       <div className="formPage">
-        <MDBContainer>
-          <MDBRow>
-            <MDBCol md="6">
+        <MDBContainer class="text-primary">
+          <form
+            class="text-primary text-center border border-light p-5"
+            onSubmit={this.onSubmit}
+          >
+            <p class="h2 mb-4">Subscribe</p>
+
+            <p>
+              Join our mailing list. We will provide you with our product's
+              update!
+            </p>
+
+            <p>
+              <a class="text-warning" href="" target="_blank">
+                See the last newsletter
+              </a>
+            </p>
+
+            <input
+              type="text"
+              id="defaultSubscriptionFormPassword"
+              class="form-control mb-4"
+              placeholder="Name"
+              name="name"
+            />
+
+            <input
+              type="email"
+              id="defaultSubscriptionFormEmail"
+              class="form-control mb-4"
+              placeholder="E-mail"
+              name="email"
+            />
+            <div className="text-center py-4 mt-3">
+              <MDBBtn
+                outline
+                color="info"
+                className="btn btn-outline-purple"
+                type="submit"
+                onClick={this.handleSubmit}
+              >
+                Subscribe <MDBIcon far icon="paper-plane" className="ml-1" />
+              </MDBBtn>
+            </div>
+          </form>
+          {/* <MDBRow>
+            <MDBCol md="10" center>
               <MDBCard>
                 <MDBCardBody>
                   <form onSubmit={this.onSubmit}>
@@ -82,19 +118,21 @@ class FormPage extends React.Component {
                     />
                     <div className="text-center py-4 mt-3">
                       <MDBBtn
+                        outline
+                        color="info"
                         className="btn btn-outline-purple"
                         type="submit"
                         onClick={this.handleSubmit}
                       >
-                        Send
-                        <MDBIcon far icon="paper-plane" className="ml-2" />
+                        Subscribe{" "}
+                        <MDBIcon far icon="paper-plane" className="ml-1" />
                       </MDBBtn>
                     </div>
                   </form>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
-          </MDBRow>
+          </MDBRow> */}
         </MDBContainer>
       </div>
     );
