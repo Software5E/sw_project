@@ -18,26 +18,25 @@ class App extends Component {
   render() {
 
     return (
-        <div>
-            <header>
-                <Toolbar/>
-            </header>
-            <main>
-              <div style={{ background: 'black' }}>
-                <Switch>
-                  <Route exact path="/Home" component={Home} />
-                  <Route exact path="/About" component={About} />
-                  <Route exact path="/">
-                    <Redirect to="/Home" />
-                  </Route>
-                  <Route component={NotFound} />
-                </Switch>
-              </div >
-            </main>
-            <footer>
-                <Footer />
-            </footer>
-        </div>
+      <div>
+        <header>
+          <Toolbar />
+        </header>
+        <main>
+          <Switch>
+            <Route exact path="/Home" component={Home} />
+            <Route exact path="/About" component={About} />
+            <ProtectedRoute exact path="/List" component={AdminList} />
+            <Route exact path="/Admin" component={AdminLogin} />
+            <Route exact path="/signup" component={Home} />
+            <Route exact path="/">
+              <Redirect to="/Home" />
+            </Route>
+            <Route component={NotFound} />
+          </Switch>
+          <Footer />
+        </main>
+      </div>
     );
   }
 }
