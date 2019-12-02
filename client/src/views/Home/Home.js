@@ -4,7 +4,6 @@ import "./Home.css";
 import Video from "../../components/Video/Video";
 import Imgs from "../../components/Imgs/Imgs";
 import SignUp from "../../components/SignUp/SignUp";
-import Footer from "../../components/Footer/Footer"
 
 //import Container from 'react-bootstrap/Container';
 
