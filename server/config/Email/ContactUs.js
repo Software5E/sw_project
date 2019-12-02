@@ -3,8 +3,7 @@ const xoauth2 = require('xoauth2');
 const config = require('./emailConfig');
 
 
-//send html version of newsletter to each person in list
-module.exports = async (to, subject_line, message, html) => {
+module.exports = async (subject_line, message) => {
     const transporter = nodemailer.createTransport({
         port: 465,
         host: 'smtp.zoho.com',
@@ -16,10 +15,9 @@ module.exports = async (to, subject_line, message, html) => {
 
     let mailOptions = {
         from: 'comingsoon@facerlock.com',
-        to: to,
+        to: 'alex@facerlock.com',
         subject: subject_line,
         text: message,
-        html: html
     };
 
     return promise = new Promise((resolve, reject) => {

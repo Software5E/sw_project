@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Navbar bg="dark" expand="lg" fixed="bottom" className="foot">
+    <Navbar bg="dark" expand="lg" className="foot">
       <div className="text-left">
         <MDBContainer fluid className={"SocialContainer"}>
           <i className="social" class="fas fa-toolbox fa-2x"></i>{" "}
@@ -19,9 +19,9 @@ const Footer = () => {
       </div>
 
       <div className="container text-center">
-        <MDBContainer fluid>
+        <MDBContainer fluid style={{color: "white"}}>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href={"Home"}>FaceR.com </a>
+          <a style={{color: "white"}} href={"Home"}>FaceR.com </a>
         </MDBContainer>
       </div>
       <div className="footer-copyright text-right" id="socials">

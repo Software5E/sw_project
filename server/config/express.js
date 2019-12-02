@@ -4,17 +4,18 @@ var path = require("path"),
   config = require("./config"),
   morgan = require("morgan"),
   bodyParser = require("body-parser"),
-  sendMail = require("./Email/send");
-fs = require("fs");
-emails = require("./Email/emailList");
-host = require("./Email/emailHost");
-//exampleRouter = require('../routes/examples.server.routes')
-subscriptionRouter = require("../routes/subscription.server.routes");
-const cors = require("cors");
-sendMail = require("./Email/send");
-fs = require("fs");
-emails = require("./Email/emailList");
-host = require("./Email/emailHost");
+  sendMail = require("./Email/send"),
+  fs = require("fs"),
+  emails = require("./Email/emailList"),
+  host = require("./Email/emailHost"),
+  //exampleRouter = require('../routes/examples.server.routes')
+  subscriptionRouter = require("../routes/subscription.server.routes"),
+  cors = require("cors"),
+  sendMail = require("./Email/send"),
+  fs = require("fs"),
+  emails = require("./Email/emailList"),
+  host = require("./Email/emailHost"),
+  contact = require("./Email/ContactUs.js")
 //exampleRouter = require('../routes/examples.server.routes')
 
 module.exports.init = function() {
@@ -67,6 +68,13 @@ module.exports.init = function() {
     );
     res.send("Emails Sent");
   });
+
+  app.post("/contactUs", (req,res) => {
+    const subject = `Sent by ${req.body.name} from ${req.body.email}`;
+    contact(subject,req.body.message);
+    res.status(200);
+  });
+  
   //all other requests send to the homepage
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "../../../client/build/index.html"));
@@ -74,3 +82,4 @@ module.exports.init = function() {
 
   return app;
 };
+
