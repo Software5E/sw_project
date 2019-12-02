@@ -15,7 +15,6 @@ class AdminLogin extends React.Component {
         const name = "admin"
         if ((this.state.username == name) && (this.state.password == pass)){
             //route to newsletter list
-            console.log("The name and pass were correct.")
             return(
                 auth.login(() =>{
                     console.log(auth.authenticated)
@@ -25,7 +24,6 @@ class AdminLogin extends React.Component {
 
         }else {
             //say password is not correct
-            console.log("The name and pass were NOT correct.")
             return(
                 this.props.history.push('/admin')
             );
