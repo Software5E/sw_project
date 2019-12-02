@@ -1,22 +1,32 @@
-import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Home from "./views/Home/Home"
-import About from "./views/About/About"
-import NotFound from "./views/NotFound"
-import Footer from "./components/Footer/Footer"
-import Toolbar from "./components/Toolbar/Toolbar"
-import SignUp from "./components/SignUp/SignUp"
-import Container from 'react-bootstrap/Container';
+import React, { Component } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Home from "./views/Home/Home";
+import About from "./views/About/About";
+import AdminList from "./views/AdminList/AdminList";
+import NotFound from "./views/NotFound";
+import Footer from "./components/Footer/Footer";
+import Toolbar from "./components/Toolbar/Toolbar";
+import AdminLogin from "./views/AdminLogin/AdminLogin";
+//import SignUp from "./components/SignUp/SignUp";
+//import Container from 'react-bootstrap/Container';
+import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 //import SideDrawer from './components/SideDrawer/SideDrawer';
 //import BackDrop from './components/BackDrop/BackDrop';
-import './bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
-
+import "./bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+//import axios from 'axios';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      name: "",
+      email: ""
+    };
+  }
 
   render() {
-
     return (
       <div>
         <header>

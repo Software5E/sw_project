@@ -1,7 +1,6 @@
 import React from 'react'
 import './AboutUs.css'
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+import Timeline from '../Timeline/Timeline'
 
 class AboutUs extends React.Component {
 
@@ -14,27 +13,6 @@ class AboutUs extends React.Component {
                 <div class="accent">Facial Recognition Technology</div> 
                 to Make Your Life More Secure.
             </div>
-            {/*<div class="About-Row">
-               <div class="About-Container">
-                   <div class="About-Blurb">
-                       <div class="Block-Title">
-                           Our Mission
-                       </div>
-                       blah blah blah blah blah blah blah blah
-                       blah blah blah blah blah blah blah blah  
-                   </div>
-               </div>
-               <div class="About-Container">
-               <div class="About-Blurb">
-                       <div class="Block-Title">
-                           Our Product
-                       </div>
-                       blah blah blah blah blah blah blah blah
-                       blah blah blah blah blah blah blah blah  
-                   </div>
-               </div>
-            </div>
-            */}
             <span></span> 
             <div class="History-of-Locks">    
                 <div class="About-Container">
@@ -46,7 +24,10 @@ class AboutUs extends React.Component {
                     Information about the history of locks will go in this section!
                     </p>
                 </div>
-                <img src='../../august-lock-photo.jpg'></img>
+                {/*<img src='../../august-lock-photo.jpg'></img>*/}
+            </div>
+            <div>
+                <Timeline/>
             </div>
             
             
