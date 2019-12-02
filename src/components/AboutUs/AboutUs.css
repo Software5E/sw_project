@@ -1,0 +1,74 @@
+.setup {
+    background-color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+.title {
+    text-align: center;
+    padding: 50px 10px;
+    margin: 0px 200px 300px;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    /*color: #fff;*/
+}
+.About-Container {
+    display: column;
+    flex-wrap: wrap;
+    flex: 1;
+    /*flex-basis: 50%;*/
+}
+.About-Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.About-Blurb {
+    /*background-color: #DC143C;*/
+    margin: 0px 40px;
+    /*color: #fff;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    background-color: #DCDCDC;
+    /*border-color: #DC143C;*/
+    
+}
+.Block-Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+.History-of-Locks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #3CB371;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+.History-of-Locks-Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 30px;
+    height: 90px;
+}
+.History-of-Locks-Info {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 30px;
+}
+.accent {
+    color: #32CD32;
+}
+.separator {
+    color: #fff;
+    content: "";
+    width: 150px;
+    height: 20px;
+    fill: #fff;
+    border-bottom: 8px solid #fff;
+    margin: 0px 30px 30px;
+}
