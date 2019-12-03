@@ -1,6 +1,6 @@
 import React from 'react';
 import './AdminList.css';
-import DataTable from './DataTable';
+//import DataTable from './DataTable';
 import ZingChart from 'zingchart-react';
 import axios from "axios";
 
@@ -11,7 +11,7 @@ class AdminList extends React.Component {
             usersCollection: [] 
         };
     }
-
+    /*
     componentDidMount() {
         axios.get('/')
             .then(res => {
@@ -28,7 +28,7 @@ class AdminList extends React.Component {
             return <DataTable obj={data} key={i} />;
         });
     }
-
+    */
     render() {
     return (
         <div className="list">
@@ -50,7 +50,7 @@ class AdminList extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.dataTable()}
+                            {/*this.dataTable()*/}
                         </tbody>
                     </table>
                 </div>
