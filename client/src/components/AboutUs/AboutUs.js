@@ -21,16 +21,28 @@ class AboutUs extends React.Component {
                     </div>
                     <div class="separator"></div>
                     <p class="History-of-Locks-Info">
-                    Information about the history of locks will go in this section!
+                    The evolution of lock security over the decades.
                     </p>
                 </div>
-                {/*<img src='../../august-lock-photo.jpg'></img>*/}
             </div>
+            <span></span> 
             <div>
                 <Timeline/>
             </div>
-            
-            
+            <div class="Facer-Comparison">
+                <div class="About-Container">
+                    <div class="Facer-Comparison-Title">
+                        How Does FaceR Compare?
+                    </div>
+                    <div class="separator"></div>
+                    <p class="Facer-Comparison-Info">
+                    See what makes FaceR more advanced than the rest.
+                    </p>
+                </div>
+            <div class="Scale-Image">
+            <img src="../../big_table_edited.jpg" />
+            </div>
+            </div> 
         </div>
         )
 

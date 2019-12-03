@@ -1,3 +1,15 @@
 .formPage {
   padding-bottom: 30px;
 }
+.subscribe-title {
+  font-family: 'Roboto', sans-serif;
+  color: #FF0000;
+}
+.subscribe-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #FF0000;
+}
+.text-color {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
