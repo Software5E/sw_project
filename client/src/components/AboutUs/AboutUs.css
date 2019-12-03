@@ -7,14 +7,20 @@
     text-align: center;
     padding: 50px 10px;
     margin: 0px 200px 300px;
-    font-size: 80px;
+    font-size: 70px;
     font-family: 'Roboto', sans-serif;
-    /*color: #fff;*/
+    color: #fff;
 
     @media (max-width: 767px) {
         text-align: center;
         font-size: 30px;
       }
+}
+.title-accent {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    color: #FF0000;
 }
 .About-Container {
     display: column;
@@ -31,7 +37,7 @@
 .About-Blurb {
     /*background-color: #DC143C;*/
     margin: 0px 40px;
-    /*color: #fff;*/
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     background-color: #DCDCDC;
@@ -50,6 +56,7 @@
     /*background-color: #3CB371;*/
     
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
     font-size: 30px;
     text-align: left;
 }
@@ -67,7 +74,6 @@
     /*text-align: center;*/
 }
 .accent {
-    /*color: #32CD32;*/
     color: #FF0000;
 }
 .separator {
@@ -88,6 +94,7 @@
     text-align: left;
 }
 .Facer-Comparison-Title {
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 70px;
     text-align: left;
@@ -97,6 +104,7 @@
 }
 .Facer-Comparison-Info {
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
     margin: 20px 30px;
     /*text-align: center;*/
 }

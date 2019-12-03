@@ -10,7 +10,7 @@ class AboutUs extends React.Component {
         <div >
             <div class="title fadeInDown">
                 We Use 
-                <div class="accent">Facial Recognition Technology</div> 
+                <div class="title-accent">Facial Recognition Technology</div> 
                 to Make Your Life More Secure.
             </div>
             <span></span> 

@@ -10,7 +10,7 @@ class NewsLetter extends React.Component {
         <div >
             <div class="title fadeInDown">
                 Stay Updated With Our 
-                <div class="accent">Monthly Newsletter</div> 
+                <div class="title-accent">Monthly Newsletter</div> 
                 Download Below or Subscribe From Home. 
             </div>
             <span></span>
