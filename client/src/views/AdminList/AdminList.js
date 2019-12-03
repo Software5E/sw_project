@@ -81,15 +81,15 @@ class AdminList extends React.Component {
                  <h1>Admin Console</h1>
                  <p>View Newsletter and statistics</p>
             </div>
-            <div>
-                <ZingChart data={graphConfig}></ZingChart>
-            </div>
             <h5><b>Mailing List</b></h5>
             <p>List of Newsletter emails in an easy to view style</p>
             <div>
               {emails.map(function(e, id){
               return (<li key={id}>{e}</li>)
               })}
+            </div>
+            <div>
+                <ZingChart data={graphConfig}></ZingChart>
             </div>
         </div>
         );
