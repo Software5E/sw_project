@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import './NewsLetter.css'
+import './NewsLetter.css';
 
 class NewsLetter extends React.Component {
 
