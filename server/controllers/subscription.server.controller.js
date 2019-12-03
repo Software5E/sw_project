@@ -66,13 +66,13 @@ exports.delete = function(req, res) {
 
 /* Retreive all the directory listings, sorted alphabetically by listing code */
 exports.list = function(req, res) {
-
+  console.log('list router function entered');
   Subscription.find({}).sort('name').exec(function(err, subscrips) {
     if(err)
     {
       res.send(err);
     }
-    //console.log(listings);
+    console.log(subscrips);
     res.json(subscrips)
   }); 
 };

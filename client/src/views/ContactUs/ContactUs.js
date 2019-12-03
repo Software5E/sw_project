@@ -6,7 +6,6 @@ import './ContactUs.css'
 
 
 
-
 class Contact extends React.Component {
     constructor(props){
         super(props);
