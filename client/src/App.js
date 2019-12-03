@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
-import Newsletter from "./views/Newsletter/Newsletter";
+import Newsletter from "./views/NewsLetter/Newsletter";
 import AdminList from "./views/AdminList/AdminList";
 import NotFound from "./views/NotFound";
 import Footer from "./components/Footer/Footer";
 import Toolbar from "./components/Toolbar/Toolbar";
 import AdminLogin from "./views/AdminLogin/AdminLogin";
-import Contact from "./views/ContactUs/ContactUs"
+import Contact from "./views/ContactUs/ContactUs";
 //import SignUp from "./components/SignUp/SignUp";
 //import Container from 'react-bootstrap/Container';
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
@@ -42,7 +42,7 @@ class App extends Component {
             <Route exact path="/Admin" component={AdminLogin} />
             <Route exact path="/signup" component={Home} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/Newsletter" component={Newsletter}/>
+            <Route exact path="/Newsletter" component={Newsletter} />
             <Route exact path="/">
               <Redirect to="/Home" />
             </Route>
