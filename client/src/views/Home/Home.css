@@ -25,3 +25,8 @@
 .Home1 {
   background-color: #282c34;
 }
+
+body#page-top{
+    height: 100% !important;
+    margin-bottom: 0;
+}
