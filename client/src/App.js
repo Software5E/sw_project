@@ -8,6 +8,7 @@ import NotFound from "./views/NotFound";
 import Footer from "./components/Footer/Footer";
 import Toolbar from "./components/Toolbar/Toolbar";
 import AdminLogin from "./views/AdminLogin/AdminLogin";
+import Contact from "./views/ContactUs/ContactUs"
 //import SignUp from "./components/SignUp/SignUp";
 //import Container from 'react-bootstrap/Container';
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
@@ -29,29 +30,26 @@ class App extends Component {
 
   render() {
     return (
-      <div className="back">
+      <div>
         <header>
           <Toolbar />
         </header>
         <main>
-          <div style={{ background: "black" }}>
-            <Switch>
-              <Route exact path="/Home" component={Home} />
-              <Route exact path="/About" component={About} />
-              <Route exact path="/Newsletter" component={Newsletter} />
-              <ProtectedRoute exact path="/List" component={AdminList} />
-              <Route exact path="/Admin" component={AdminLogin} />
-              <Route exact path="/signup" component={Home} />
-              <Route exact path="/">
-                <Redirect to="/Home" />
-              </Route>
-              <Route component={NotFound} />
-            </Switch>
-          </div>
-        </main>
-        <footer>
+          <Switch>
+            <Route exact path="/Home" component={Home} />
+            <Route exact path="/About" component={About} />
+            <ProtectedRoute exact path="/List" component={AdminList} />
+            <Route exact path="/Admin" component={AdminLogin} />
+            <Route exact path="/signup" component={Home} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/Newsletter" component={Newsletter}/>
+            <Route exact path="/">
+              <Redirect to="/Home" />
+            </Route>
+            <Route component={NotFound} />
+          </Switch>
           <Footer />
-        </footer>
+        </main>
       </div>
     );
   }

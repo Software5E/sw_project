@@ -1,40 +1,33 @@
 import React from "react";
 import "../SideDrawer/DrawerToggleButton";
 //import './Toolbar.css';
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from 'react-bootstrap';
+
+const pic = require('../Toolbar/logo.png');
 
 const toolbar = props => (
-  <Navbar fixed="top" bg="light" expand="lg">
-    <Navbar.Brand href={"Home"}>
-      {" "}
-      <img
-        alt=""
-        src="/FaceR.png"
-        width="150"
-        height="30"
-        className="d-inline-block align-top"
-      />
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <Nav.Link href={"About"}>About Us</Nav.Link>
-        <Nav.Link href={"Newsletter"}>Newsletter</Nav.Link>
-        <NavDropdown title="Contact Us" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Email" target="_blank">
-            Email
-          </NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item
-            href="https://www.amazon.com/s?k=august+smart+lock&crid=18VO8MO2Z2XK2&sprefix=august+sm%2Caps%2C157&ref=nb_sb_ss_i_1_9"
-            target="_blank"
-          >
-            Amazon Webstore
-          </NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+    <Navbar fixed='top' bg="light" expand="lg">
+        <Navbar.Brand href={'Home'}>  <img
+            alt=""
+            src={pic}
+            width="auto"
+            height="30"
+            className="d-inline-block align-top"
+        /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+                <Nav.Link href={'About'} >About Us</Nav.Link>
+                <Nav.Link href={'Newsletter'}>Newsletter</Nav.Link>
+                <Nav.Link href={'contact'}>Contact Us</Nav.Link>
+                {/* <NavDropdown title="Contact Us" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Email</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Amazon Webstore</NavDropdown.Item>
+                </NavDropdown> */}
+            </Nav>
+        </Navbar.Collapse>
+    </Navbar >
 );
 
 export default toolbar;
