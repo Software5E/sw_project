@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../src/bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button } from 'react-bootstrap'
 import axios from 'axios'
-
+import './ContactUs.css'
 
 
 
