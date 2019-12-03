@@ -12,7 +12,7 @@ router.route('/')
 
   router.route('/')
   .get(subscriptions.list)
-  .post(subscriptions.create);
+  //.post(subscriptions.create);
   
 router.route('/:subscriptionId')
   .get(subscriptions.read)

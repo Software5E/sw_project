@@ -20,9 +20,11 @@ class FormPage extends React.Component {
     let user = {};
     user.name = e.target[0].value;
     user.email = e.target[1].value;
+    //user.timestamp = new Date();
 
     console.log("username: ", user.name);
     console.log("useremail: ", user.email);
+    //console.log("date added: ", user.timestamp);
 
     axios
       .post("/signup", user)

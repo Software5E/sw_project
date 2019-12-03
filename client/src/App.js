@@ -14,7 +14,7 @@ import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 //import BackDrop from './components/BackDrop/BackDrop';
 import "./bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-//import axios from 'axios';
+//import Newsletter from "./components/Newsletter/Newsletter";
 
 class App extends Component {
   constructor(props) {

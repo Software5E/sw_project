@@ -1,77 +1,78 @@
 import React from 'react'
 import './Timeline.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+//import 'react-vertical-timeline-component/style.min.css';
 
 class Timeline extends React.Component {
 
     render() {
         return (
-        <VerticalTimeline>
+        <VerticalTimeline contentStyle={{ background: '#000'}}>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#A9A9A9', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  #fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #A9A9A9' }}
     /*date="2011 - present"*/
-    /*iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}*/
+    /*iconStyle={{ background: '#000', color: '#fff' }}*/
+    
   >
     <h3 className="vertical-timeline-element-title block-title">Tumbler Lock</h3>
     <h4 className="vertical-timeline-element-subtitle block-text">1778</h4>
     <p className="block-text">
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+    uses pins of varying lengths to prevent the lock from opening without the correct key
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#A9A9A9', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #A9A9A9' }}
     /*date="2010 - 2011"*/
-    /*iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}*/
+    /*iconStyle={{ background: '#000', color: '#fff' }}*/
   >
     <h3 className="vertical-timeline-element-title block-title">Flat Key</h3>
     <h4 className="vertical-timeline-element-subtitle block-text">1851</h4>
     <p className="block-text">
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+    key with serrated edges as well as pins of varying lengths within the lock itself
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#808080', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #808080' }}
     /*date="2008 - 2010"*/
-    /*iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}*/
+    /*iconStyle={{ background: '#000', color: '#fff' }}*/
+
   >
     <h3 className="vertical-timeline-element-title block-title">Electronic Locks</h3>
     <h4 className="vertical-timeline-element-subtitle block-text">1970s</h4>
     <p className="block-text">
-      User Experience, Visual Design
+     lock or unlock with the assistance of an electrical current
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#808080', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #808080' }}
     /*date="2006 - 2008"*/
-    /*iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<WorkIcon />}*/
+    /*iconStyle={{ background: '#000', color: '#fff' }}*/
   >
     <h3 className="vertical-timeline-element-title block-title">Smart Lock</h3>
     <h4 className="vertical-timeline-element-subtitle block-text">2014</h4>
     <p className="block-text">
-      User Experience, Visual Design
+    opens wirelessly with authorized user authentication
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    contentStyle={{ background: '#32CD32', color: '#fff' }}
+    contentStyle={{ background: '#FF0000', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #FF0000' }}
     /*date="April 2013"*/
-    /*iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    icon={<SchoolIcon />}*/
+    /*iconStyle={{ background: '#000', color: '#fff' }}*/
   >
     <h3 className="vertical-timeline-element-title block-title">FaceR</h3>
     <h4 className="vertical-timeline-element-subtitle block-text">2020</h4>
     <p className="block-text">
-      Strategy, Social Media
+      uses facial recognition as a form of user authentication to unlock 
     </p>
   </VerticalTimelineElement>
 

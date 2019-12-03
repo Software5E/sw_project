@@ -6,11 +6,15 @@ var mongoose = require('mongoose'),
 
 var SubscriptionSchema = new Schema({
     name: { type: String, required: true },
-    email: { type: String, required: true }
+    email: { type: String, required: true },
+    created_at: {type: Date, default: Date.now},
+    updated_at: {type: Date}
 });
 
 // Create a 'pre' function that adds the updated_at (and created_at if not already there) property 
 SubscriptionSchema.pre('save', function(next) {
+    console.log('pre function entered');
+
     //gets current date
     var currentDate = new Date();
   
