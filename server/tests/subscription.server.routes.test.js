@@ -52,7 +52,7 @@ describe('Subscription CRUD tests', function() {
   it('should be able to save a subscription', function(done) {
     var subscription = {
       name: 'Sara Gaya', 
-      email: 'sgaya16@ufl.edu' 
+      email: 'isaiah@ufl.edu' 
     };
     agent.post('/signup')
       .send(subscription)

@@ -20,7 +20,7 @@ var subscription, id;
 
 subscription =  {
 name: "Sara Gaya", 
-email: "sgaya16@ufl.edu"
+email: "i@ufl.edu"
 }
 
 describe('Subscription Schema Unit Tests', function() {
@@ -39,24 +39,24 @@ describe('Saving to database', function() {
   */
  this.timeout(10000);
 
- it('saves properly when email and name provided', function(done){
-   new Subscription({
-     name: subscription.name, 
-     email: subscription.email
-   }).save(function(err, subscription){
-     should.not.exist(err);
-     id = subscription._id;
-     done();
-   });
- });
+//  it('saves properly when email and name provided', function(done){
+//    new Subscription({
+//      name: subscription.name, 
+//      email: subscription.email
+//    }).save(function(err, subscription){
+//      should.not.exist(err);
+//      id = subscription._id;
+//      done();
+//    });
+//  });
 
- it('saves properly when all properties provided', function(done){
-   new Subscription(subscription).save(function(err, subscription){
-     should.not.exist(err);
-     id = subscription._id;
-     done();
-   });
- });
+//  it('saves properly when all properties provided', function(done){
+//    new Subscription(subscription).save(function(err, subscription){
+//      should.not.exist(err);
+//      id = subscription._id;
+//      done();
+//    });
+//  });
 
  it('throws an error when email not provided', function(done){
    new Subscription({
