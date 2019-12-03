@@ -11,7 +11,7 @@ function AdminList() {
             <div className="row">
                 <div className="left-collumn">
                     <div className="list">
-                        <h4>Newsletter List</h4>
+                        <h5><b>Mailing List</b></h5>
                         <p>List of Newsletter emails in an easy to view style</p>
                         <ul>
                             <li>Email1@gmail.com</li>
