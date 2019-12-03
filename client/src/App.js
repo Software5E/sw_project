@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
+import Newsletter from "./views/Newsletter/Newsletter";
 import AdminList from "./views/AdminList/AdminList";
 import NotFound from "./views/NotFound";
 import Footer from "./components/Footer/Footer";
@@ -37,6 +38,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/Home" component={Home} />
             <Route exact path="/About" component={About} />
+            <Route exact path="/Newsletter" component={Newsletter} />
             <ProtectedRoute exact path="/List" component={AdminList} />
             <Route exact path="/Admin" component={AdminLogin} />
             <Route exact path="/signup" component={Home} />
