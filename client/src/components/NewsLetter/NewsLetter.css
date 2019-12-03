@@ -1,0 +1,79 @@
+.setup {
+    background-color: #fff;
+    text-align: center;
+    font-size: 50px;
+    background-color: #1C1919;
+}
+.title {
+    text-align: center;
+    padding: 15px 10px;
+    margin: 0px 200px 20px;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    /*color: #fff;*/
+}
+.Newsletter-Container {
+    display: column;
+    flex-wrap: wrap;
+    flex: 1;
+    /*flex-basis: 50%;*/
+    padding-bottom: 30px;
+}
+.Newsletter-Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.Newsletter-Blurb {
+    /*background-color: #DC143C;*/
+    margin: 0px 40px;
+    /*color: #fff;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #DCDCDC;
+    /*border-color: #DC143C;*/
+    
+}
+.Block-Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.Newsletters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*background-color: #3CB371;*/
+    color: #32CD32;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+.Newsletter-Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 30px;
+    height: 70px;
+}
+.Newsletter-Links {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 30px;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.accent {
+    color: #32CD32;
+}
+.separator {
+    color: #fff;
+    content: "";
+    width: 150px;
+    height: 10px;
+    fill: #fff;
+    border-bottom: 8px solid #fff;
+    margin: 0px 30px 30px;
+}

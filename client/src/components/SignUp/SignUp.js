@@ -20,9 +20,11 @@ class FormPage extends React.Component {
     let user = {};
     user.name = e.target[0].value;
     user.email = e.target[1].value;
+    //user.timestamp = new Date();
 
     console.log("username: ", user.name);
     console.log("useremail: ", user.email);
+    //console.log("date added: ", user.timestamp);
 
     axios
       .post("/signup", user)
@@ -45,17 +47,17 @@ class FormPage extends React.Component {
             class="text-primary text-center border border-light p-5"
             onSubmit={this.onSubmit}
           >
-            <p class="h2 mb-4">Subscribe</p>
+            <p class="h2 mb-4 subscribe-title">Subscribe</p>
 
-            <p>
+            <p class="subscribe-text">
               Join our mailing list. We will provide you with our product's
               update!
             </p>
 
             <p>
-              <Link class="text-warning" to="/Nesletter">
+              <Link class="text-warning" to="/Newsletter">
                 See the last newsletter
-              </Link>{" "}
+              </Link >
               <MDBIcon icon="clipboard-list" />
             </p>
 
@@ -78,7 +80,7 @@ class FormPage extends React.Component {
               <MDBBtn
                 outline
                 color="info"
-                className="btn btn-outline-purple"
+                className="btn btn-outline-info btn-color"
                 type="submit"
                 onClick={this.handleSubmit}
               >
@@ -86,54 +88,6 @@ class FormPage extends React.Component {
               </MDBBtn>
             </div>
           </form>
-          {/* <MDBRow>
-            <MDBCol md="10" center>
-              <MDBCard>
-                <MDBCardBody>
-                  <form onSubmit={this.onSubmit}>
-                    <p className="h4 text-center py-4">Subscribe</p>
-                    <label
-                      htmlFor="defaultFormCardNameEx"
-                      className="grey-text font-weight-light"
-                    >
-                      Your name
-                    </label>
-                    <input
-                      type="text"
-                      id="defaultFormCardNameEx"
-                      className="form-control"
-                      name="name"
-                    />
-                    <br />
-                    <label
-                      htmlFor="defaultFormCardEmailEx"
-                      className="grey-text font-weight-light"
-                    >
-                      Your email
-                    </label>
-                    <input
-                      type="email"
-                      id="defaultFormCardEmailEx"
-                      className="form-control"
-                      name="email"
-                    />
-                    <div className="text-center py-4 mt-3">
-                      <MDBBtn
-                        outline
-                        color="info"
-                        className="btn btn-outline-purple"
-                        type="submit"
-                        onClick={this.handleSubmit}
-                      >
-                        Subscribe{" "}
-                        <MDBIcon far icon="paper-plane" className="ml-1" />
-                      </MDBBtn>
-                    </div>
-                  </form>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-          </MDBRow> */}
         </MDBContainer>
       </div>
     );
