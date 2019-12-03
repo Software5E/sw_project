@@ -27,12 +27,15 @@ class AdminList extends React.Component {
     
     render() {
         let usersPerMonth = [0,0,0,0,0,0,0,0,0,0,0,0];
+        let emails = [];
         this.state.usersCollection.forEach((item) => {
             console.log(item.name);
+            emails.push(item.email);
             var index = new Date(item.created_at).getMonth();
             usersPerMonth[index]++;
         });
         console.log(usersPerMonth);
+        console.log(emails);
 
         let graphConfig = {
             type: 'bar',
@@ -76,11 +79,11 @@ class AdminList extends React.Component {
         <div className="list">
             <h1>Newsletter List</h1>
             <p>List of Newsletter emails in an easy to view style</p>
-            <ul>
-                <li>Email1@gmail.com</li>
-                <li>Email2@hotmail.com</li>
-                <li>Email3@aol.com</li>
-            </ul>
+            <div>
+              {emails.map(function(e, id){
+              return (<li key={id}>{e}</li>)
+              })}
+            </div>
             <div>
                 <ZingChart data={graphConfig}></ZingChart>
             </div>
