@@ -20,9 +20,11 @@ class FormPage extends React.Component {
     let user = {};
     user.name = e.target[0].value;
     user.email = e.target[1].value;
+    //user.timestamp = new Date();
 
     console.log("username: ", user.name);
     console.log("useremail: ", user.email);
+    //console.log("date added: ", user.timestamp);
 
     axios
       .post("/signup", user)
@@ -45,15 +47,15 @@ class FormPage extends React.Component {
             class="text-primary text-center border border-light p-5"
             onSubmit={this.onSubmit}
           >
-            <p class="h2 mb-4">Subscribe</p>
+            <p class="h2 mb-4 subscribe-title">Subscribe</p>
 
-            <p>
+            <p class="subscribe-text">
               Join our mailing list. We will provide you with our product's
               update!
             </p>
 
             <p>
-              <Link class="text-warning" to="/Nesletter">
+              <Link class="text-color" to="/Newsletter">
                 See the last newsletter
               </Link>{" "}
               <MDBIcon icon="clipboard-list" />
@@ -78,7 +80,7 @@ class FormPage extends React.Component {
               <MDBBtn
                 outline
                 color="info"
-                className="btn btn-outline-purple"
+                className="btn btn-outline-info btn-color"
                 type="submit"
                 onClick={this.handleSubmit}
               >

@@ -8,7 +8,7 @@
     "install-all": "concurrently \"npm install\" \"cd client && npm install\"",
     "client": "cd client && npm start",
     "server": "nodemon ./server.js",
-    "dev": "concurrently \"nodemon server/server.js\" \"cd client && npm run start\"",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\"",
     "build": "cd client && npm run build",
     "buildServe": "cd client && npm run build",
     "start": "node server.js",
@@ -58,11 +58,8 @@
     "test": "^0.6.0",
     "typescript": "^3.6.4",
     "video-react": "^0.14.1",
-    "xoauth2": "^1.2.0"
+    "xoauth2": "^1.2.0",
+    "zingchart-react": "^2.0.1"
   },
-  "homepage": "https://github.com/Software5E/sw_project#readme",
-  "devDependencies": {
-    "eslint-plugin-react-hooks": "^2.1.2",
-    "react-social-icons": "^4.1.0"
-  }
+  "homepage": "https://github.com/Software5E/sw_project#readme"
 }
