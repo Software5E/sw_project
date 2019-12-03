@@ -1,56 +1,50 @@
-html {
-  background-color: #080808;
+html{
+
+   background-color: #9b9090 !important;
 }
+
+body{
+    margin-top: 56px;
+}
+
 body {
-  margin-top: 56px;
-}
-@media (min-width: 370px) {
-  body {
     margin-bottom: 6vh;
     padding: 0;
     font-family: sans-serif;
-    background-color: #080808;
-  }
-}
-@media (min-width: 500px) {
-  body {
-    margin-bottom: 7vh;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #080808;
-  }
-}
-@media (min-width: 720px) {
-  body {
-    margin-bottom: 8vh;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #080808;
-  }
-}
-@media (min-width: 982px) {
-  body {
-    margin-bottom: 11vh;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #080808;
-  }
+
 }
 
-@media (min-width: 1400px) {
-  body {
-    margin-bottom: 5vh;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #080808;
-  }
+@media (min-width: 500px){
+
+    body {
+        margin-bottom: 7vh;
+        padding: 0;
+        font-family: sans-serif;
+
+    }
 }
-.root {
-  background-color: #080808;
+@media (min-width: 720px){
+    body {
+        margin-bottom: 8vh;
+        padding: 0;
+        font-family: sans-serif;
+
+    }
 }
-.back {
-  background-color: #080808;
+@media (min-width: 982px){
+    body {
+        margin-bottom: 11vh;
+        padding: 0;
+        font-family: sans-serif;
+
+    }
 }
-.four {
-  background-color: white;
+
+@media (min-width: 1400px){
+    body {
+        margin-bottom: 5vh;
+        padding: 0;
+        font-family: sans-serif;
+
+    }
 }
