@@ -10,7 +10,7 @@ const toolbar = props => (
         <Navbar.Brand href={'Home'}>  <img
             alt=""
             src={pic}
-            width="auto"
+            width="150"
             height="30"
             className="d-inline-block align-top"
         /></Navbar.Brand>
