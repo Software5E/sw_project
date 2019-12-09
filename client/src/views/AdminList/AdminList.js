@@ -12,13 +12,11 @@ class AdminList extends React.Component {
         };
     }
     
+    //function gets database information and stores it in the usersCollection array
     componentDidMount() {
         axios.get('/signup')
             .then(res => {
                 this.setState({ usersCollection: res.data });
-                //console.log(res.data[1].created_at);
-                //console.log(new Date(res.data[1].created_at).getMonth());
-
             })
             .catch(function (err) {
                 console.log(err);
@@ -26,17 +24,18 @@ class AdminList extends React.Component {
     }
     
     render() {
+      //array starts with zero users for each month
         let usersPerMonth = [0,0,0,0,0,0,0,0,0,0,0,0];
         let emails = [];
         this.state.usersCollection.forEach((item) => {
             console.log(item.name);
             emails.push(item.email);
+            //gets the month from the date and iincrements the corresponding month
             var index = new Date(item.created_at).getMonth();
             usersPerMonth[index]++;
         });
-        console.log(usersPerMonth);
-        console.log(emails);
 
+        //zingchart bar graph configuration 
         let graphConfig = {
             type: 'bar',
             title: {

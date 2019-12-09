@@ -15,17 +15,19 @@ class FormPage extends React.Component {
   handleSubmit = () => alert("Thank you for Subscribing!");
 
   onSubmit(e) {
+    //prevents page from refreshing and losing form data
     e.preventDefault();
 
+    //object to hold form fields
     let user = {};
     user.name = e.target[0].value;
     user.email = e.target[1].value;
-    //user.timestamp = new Date();
+  
 
     console.log("username: ", user.name);
     console.log("useremail: ", user.email);
-    //console.log("date added: ", user.timestamp);
-
+  
+    //axios used to post the information to the database
     axios
       .post("/signup", user)
       .then(res => {
