@@ -1,5 +1,6 @@
 import React from "react";
 import "./Carousel.css";
+/* Image Carousel component -> in the event of sttoring more images change this component and pass in a map => */
 
 const Carousel = props => (
   <div

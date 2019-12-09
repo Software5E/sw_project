@@ -6,6 +6,9 @@ import { Navbar } from "react-bootstrap";
 import { SocialIcon } from "react-social-icons";
 import { Link } from "react-router-dom";
 
+/* Navigation Bar - uses material design styling classes - and react social icons - link targets need
+  to be updated to reflerct clients actual Social Links
+*/
 const Footer = () => {
   return (
     <Navbar bg="dark" expand="lg" className="foot">
@@ -19,9 +22,9 @@ const Footer = () => {
       </div>
 
       <div className="container text-center">
-        <MDBContainer fluid style={{color: "white"}}>
+        <MDBContainer fluid style={{ color: "white" }}>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a style={{color: "white"}} href={"Home"}>FaceR.com </a>
+          <a style={{ color: "white" }} href={"Home"}>FaceR.com </a>
         </MDBContainer>
       </div>
       <div className="footer-copyright text-right" id="socials">

@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 require('react-dom');
 window.React2 = require('react');
 console.log(window.React1 === window.React2);
-
+/* Image Carousel component -> in the event of sttoring more images change this component and pass in a map => */
 function Imgs() {
     return (
         <div style={{ paddingBottom: "20px" }}>
