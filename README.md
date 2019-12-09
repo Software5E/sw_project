@@ -1,19 +1,56 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project contains an example project board meant to showcase how one can be used. The issues posted to it are not real issues.
-
 # Software Enineering Group 5
 
 Website for FaceR
-
-#### _**IMPORTANT NOTE**_ - 
-This project does not have a mongoDB connection setup. To set this up first uncomment the code at the top of server.js and then create a config file which exports your db.uri connection.
+*   Logo
+![GitHub Logo](/log.png)
 
 ## Getting Started
-This repository aims to assist you in beginning work on a MERN stack application with a solid file structure as a foundation. To get started make a copy of this template repo for your project teams.
+This repository serves as the website for FaceR - a company part of University of Florida's Hatchery program.
+[Visit the page](http://group5e.herokuapp.com/)
 
-Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm run-script install-all` from the root. From now on run this command anytime you want to install all modules again. This is a script we have defined in package.json .
+After cloning run the commands: `npm install` from the root. After this you will run `npm run-script install-all` from the root. <br>From now on run this command anytime you want to install all modules again. This is a script defined in package.json.
 
-This app can be deployed directly to heroku since there is a script defined in package.json which will automatically handle building and deploying the app. For more information on deploying to heroku reference the extra resources at the bottom of this file. 
+
+## Deployment
+
+The website is currently hosted on Heroku using a free dyno. Continuos integration tool is enabled, if the CI Script Testing passes,
+ changes to master will automatically deploy. 
+
+## Built With
+
+* [MeanJS](http://meanjs.org/) - The web framework used
+* [MongoDB](https://www.mongodb.com/) - Database Management System
+
+
+## Versioning
+
+V 1.0
+
+## Authors
+
+* **Ariel Barboza**
+* **Sara Gaya**
+* **Santiago Romero**
+* **Zoe Seibert**
+* **Hayden Menge**
+* **Hannah McEachern**
+* See also the list of [contributors](https://github.com/orgs/Software5E/people) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Thank you to FaceR for being a great customer 
+* and to all the faculty and staff of CISE @ UF
+* etc
+*   Logo
+![GitHub Logo](/log.png)
+
+## Development Instrctions
+
 
 ## File structure
 #### `client` - Holds the client application
@@ -35,7 +72,6 @@ This app can be deployed directly to heroku since there is a script defined in p
 #### `package.json` - Defines npm behaviors like the scripts defined in the next section of the README
 #### `.gitignore` - Tells git which files to ignore
 #### `README` - This file!
-
 
 ## Available Scripts
 
@@ -79,41 +115,3 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-## Deployment
-
-To deploy this system, we will use Heroku as our web server host, and AWS for our static files.
-
-## Built With
-
-* [MeanJS](http://meanjs.org/) - The web framework used
-* [MongoDB](https://www.mongodb.com/) - Database Management System
-
-
-## Contributing
-
-## Versioning
-
-## Authors
-
-* **Ariel Barboza**
-* **Sara Gaya**
-* **Santiago Romero**
-* **Zoe Seibert**
-* **Hayden Menge**
-* **Hannah McEachern**
-* See also the list of [contributors](https://github.com/orgs/Software5E/people) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-*   Mobile View
-![GitHub Logo](/Capture.JPG)
-*   Desktop View
-![GitHub Logo](/Capture2.JPG)

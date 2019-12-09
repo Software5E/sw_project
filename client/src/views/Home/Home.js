@@ -6,6 +6,9 @@ import Imgs from "../../components/Imgs/Imgs";
 import SignUp from "../../components/SignUp/SignUp";
 
 //import Container from 'react-bootstrap/Container';
+/**
+ * Home page component - using container classnames 
+ */
 
 function Home() {
   return (
@@ -26,7 +29,7 @@ function Home() {
       </div>
       <div className="row h-25">
         <div className="col-8 mx-auto">
-          <SignUp className="mx-auto"/>
+          <SignUp className="mx-auto" />
         </div>
       </div>
     </div>

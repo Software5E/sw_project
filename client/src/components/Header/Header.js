@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+/* Navigation Bar - uses bootstrap styling classes */
 const Header = () => {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

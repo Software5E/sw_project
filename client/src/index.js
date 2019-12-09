@@ -4,7 +4,9 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
-
+/* The react-dom package provides DOM-specific methods that can be used at the top level of
+ your app and as an escape hatch to get outside of the React model if you need to.
+ Most of your components should not need to use this module. */
 ReactDOM.render(
     <Router>
         <App />
