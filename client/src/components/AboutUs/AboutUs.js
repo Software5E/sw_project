@@ -26,6 +26,9 @@ class AboutUs extends React.Component {
                 </div>
                 <span></span>
                 <div>
+                    {
+                        //inluded Timeline component from Timeline.js}
+                    }
                     <Timeline />
                 </div>
                 <div class="Facer-Comparison">
