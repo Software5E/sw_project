@@ -7,12 +7,14 @@ Website for FaceR
 
 ## Getting Started
 This repository serves as the website for FaceR - a company part of University of Florida's Hatchery program.
-[Visit the page](http://group5e.herokuapp.com/) 
+[Visit the page](http://group5e.herokuapp.com/)
+
+After cloning run the commands: `npm install` from the root. After this you will run `npm run-script install-all` from the root. <br>From now on run this command anytime you want to install all modules again. This is a script defined in package.json.
 
 
 ## Deployment
 
-The website is currently hosted on Heroku using a free dyno. Continuos integration tool is enabled, if the CI Testing passes,
+The website is currently hosted on Heroku using a free dyno. Continuos integration tool is enabled, if the CI Script Testing passes,
  changes to master will automatically deploy. 
 
 ## Built With
