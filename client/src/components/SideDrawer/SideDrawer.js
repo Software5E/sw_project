@@ -1,6 +1,8 @@
 import React from 'react';
 import './SideDrawer.css'
 
+/* optional side drawer component, can be used to navigate pager - currently not in use */
+
 const SideDrawer = props => {
     let drawerClasses = 'SideDrawer';
     if (props.show) {

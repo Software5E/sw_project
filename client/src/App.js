@@ -35,6 +35,7 @@ class App extends Component {
           <Toolbar />
         </header>
         <main>
+          {/* Switch component to navigate through page ComponentS depending on GET requests */}
           <Switch>
             <Route exact path="/Home" component={Home} />
             <Route exact path="/About" component={About} />

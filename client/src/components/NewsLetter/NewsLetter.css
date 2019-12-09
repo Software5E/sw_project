@@ -2,7 +2,6 @@
     background-color: #fff;
     text-align: center;
     font-size: 50px;
-    background-color: #1C1919;
 }
 .title {
     text-align: center;
@@ -10,7 +9,7 @@
     margin: 0px 200px 20px;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    /*color: #fff;*/
     /*color: #fff;*/
 }
 .Newsletter-Container {
@@ -46,7 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     /*background-color: #3CB371;*/
-    color: #32CD32;
+    color: #FF0000;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     text-align: left;
@@ -59,14 +58,14 @@
     height: 70px;
 }
 .Newsletter-Links {
-    color: #fff;
+    /*color: #fff;*/
     font-family: 'Montserrat', sans-serif;
     margin: 0px 30px;
     height: fit-content;
     padding-bottom: 10px;
 }
 .accent {
-    color: #32CD32;
+    color: #FF0000;
 }
 .separator {
     color: #fff;
