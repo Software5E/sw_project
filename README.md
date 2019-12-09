@@ -50,7 +50,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 *   Logo
 ![GitHub Logo](/log.png)
 
-## Development Instrctions
+## Development Instructions
 
 
 ## File structure
