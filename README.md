@@ -2,12 +2,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Software Enineering Group 5
 
 Website for FaceR
-*   Logo
+
 ![GitHub Logo](/log.png)
 
 ## Getting Started
-This repository serves as the website for FaceR - a company part of University of Florida's Hatchery program.
-[Visit the page](http://group5e.herokuapp.com/)
+This repository serves as the website for FaceR - a company part of University of Florida's Gator Hatchery program.<br>
+[Visit the FaceR Site](http://group5e.herokuapp.com/)<br>
+[Learn more about Gator Hatchery](https://warrington.ufl.edu/entrepreneurship-and-innovation-center/student-engagement/gator-hatchery/)
 
 After cloning run the commands: `npm install` from the root. After this you will run `npm run-script install-all` from the root. <br>From now on run this command anytime you want to install all modules again. This is a script defined in package.json.
 
