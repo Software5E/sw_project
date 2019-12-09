@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutUs.css'
 import Timeline from '../Timeline/Timeline'
-/*Always add alt to iamges to provide accesibility*/
+/*Always add alt to iamges to provide accesibility - About Us Component*/
 class AboutUs extends React.Component {
 
     render() {
