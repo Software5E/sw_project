@@ -12,7 +12,7 @@ module.exports = async (subject_line, message) => {
             pass: config.pass
         }
     });
-
+    //Options for where to send ContactUS form messages
     let mailOptions = {
         from: 'comingsoon@facerlock.com',
         to: 'alex@facerlock.com',
@@ -20,6 +20,7 @@ module.exports = async (subject_line, message) => {
         text: message,
     };
 
+    //Send mail
     return promise = new Promise((resolve, reject) => {
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {

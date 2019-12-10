@@ -17,6 +17,7 @@ class Contact extends React.Component {
             }
         }
     }
+    //Submit via POST request to server
     handleSubmit = () => {
         axios({
             method: 'post',
@@ -29,6 +30,7 @@ class Contact extends React.Component {
         });
     };
 
+    //One function to update state for each field
     handleChange(event) {
         let fieldName = event.target.name;
         let fleldVal = event.target.value;
