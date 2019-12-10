@@ -55,9 +55,9 @@ class FormPage extends React.Component {
             </p>
 
             <p>
-              <Link class="text-color" to="/Newsletter">
+              <Link class="text-warning" to="/Newsletter">
                 See the last newsletter
-              </Link>{" "}
+              </Link >
               <MDBIcon icon="clipboard-list" />
             </p>
 
