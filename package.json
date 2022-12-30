@@ -37,7 +37,7 @@
     "jquery": "^3.4.1",
     "lodash.range": "^3.2.0",
     "mdbreact": "^4.21.1",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
     "nodemailer": "^6.3.1",
